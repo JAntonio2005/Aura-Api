@@ -1,0 +1,29 @@
+# ==== Git ====
+.git
+.gitignore
+
+# ==== Python cache ====
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ==== Entornos virtuales ====
+.venv
+venv
+env
+auraml311
+auraml
+
+# ==== Archivos locales que no necesita el contenedor ====
+.env
+data.db
+
+# ==== Notebooks u otras cosas de pruebas ====
+*.ipynb
+
+# ==== Datasets pesados de entrenamiento (si es que existen) ====
+exports/stanford-dogs_*/dataset/
+exports/stanford-dogs_*/raw/
+exports/stanford-dogs_*/images/
+exports/stanford-dogs_*/tfds/

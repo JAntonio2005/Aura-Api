@@ -1,0 +1,28 @@
+# ==== Python ====
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# ==== Entornos virtuales ====
+.venv/
+venv/
+env/
+auraml311/
+auraml/
+
+# ==== IDE / editor ====
+.vscode/
+.idea/
+
+# ==== Archivos locales / secretos ====
+.env
+data.db
+
+# ==== Datasets de entrenamiento (si los vuelves a poner) ====
+# OJO: esto NO borra exports, solo ignora posibles carpetas grandes dentro
+exports/stanford-dogs_*/dataset/
+exports/stanford-dogs_*/raw/
+exports/stanford-dogs_*/images/
+exports/stanford-dogs_*/tfds/

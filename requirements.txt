@@ -1,0 +1,42 @@
+# =========================
+# Core ML (entrenamiento/serving)
+# =========================
+tensorflow>=2.16,<2.18
+tensorflow-datasets>=4.9,<5
+numpy>=1.26,<2.0
+Pillow>=10,<12
+h5py>=3.10
+scipy>=1.11,<2.0
+
+# Uploads (multipart/form-data)
+python-multipart>=0.0.9
+
+# =========================
+# API (FastAPI)
+# =========================
+fastapi>=0.111,<1.0
+uvicorn[standard]>=0.23,<1.0
+aiofiles>=23.2
+
+# =========================
+# Auth (JWT) + seguridad
+# =========================
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+email-validator>=2.1.0
+
+
+# =========================
+# DB (SQLModel + SQLAlchemy)
+# =========================
+sqlmodel>=0.0.21
+greenlet>=3.0
+
+# =========================
+passlib[bcrypt]==1.7.4
+bcrypt>=3.2,<4
+
+pydantic>=2.4
+pydantic-settings>=2.0
+email-validator>=2.0
+psycopg[binary]

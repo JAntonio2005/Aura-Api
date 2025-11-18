@@ -1,0 +1,31 @@
+[
+  {
+    "slug": "chihuahua",
+    "label": "chihuahua",
+    "name": "Chihuahua",
+    "description": "Pequeño y alerta, ideal como compañero. Necesita socialización.",
+    "temperament": "Vigilante, leal, vivaz",
+    "origin": "México",
+    "size": "toy",
+    "life_span": "12–18 años",
+    "images": [
+      "/static/breeds/chihuahua/1.jpg",
+      "/static/breeds/chihuahua/2.jpg",
+      "/static/breeds/chihuahua/3.jpg",
+      "/static/breeds/chihuahua/4.jpg",
+      "/static/breeds/chihuahua/5.jpg",
+      "/static/breeds/chihuahua/6.jpg"
+    ]
+  },
+  {
+    "slug": "german-shepherd",
+    "label": "german_shepherd",
+    "name": "Pastor Alemán",
+    "description": "Inteligente, versátil y protector. Excelente para trabajo y familia.",
+    "temperament": "Fiel, seguro, obediente",
+    "origin": "Alemania",
+    "size": "large",
+    "life_span": "9–13 años"
+    
+  }
+]
