@@ -156,14 +156,20 @@ def reset_password(
     session.commit()
     return {"detail": "Contraseña restablecida."}
 
-@router.post("/_dev/mail-test")
-def mail_test(background: BackgroundTasks):
-    html = "<h3>Prueba</h3><p>Correo funcionando 🚀</p>"
-    background.add_task(
-        send_email,
-        to=settings.SMTP_USERNAME,  # te lo envías a ti mismo
-        subject="Prueba SMTP Aura",
-        html=html,
-        text_fallback="Correo funcionando"
-    )
-    return {"detail": "Mail encolado"}
+if settings.DEBUG:
+    @router.post("/_dev/mail-test")
+    def mail_test(background: BackgroundTasks):
+        if not settings.SMTP_USERNAME:
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail="SMTP_USERNAME no configurado.",
+            )
+        html = "<h3>Prueba</h3><p>Correo funcionando</p>"
+        background.add_task(
+            send_email,
+            to=settings.SMTP_USERNAME,  # te lo envías a ti mismo
+            subject="Prueba SMTP Aura",
+            html=html,
+            text_fallback="Correo funcionando",
+        )
+        return {"detail": "Mail encolado"}

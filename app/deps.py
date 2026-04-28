@@ -1,11 +1,10 @@
-from fastapi import Depends, HTTPException, status
+from fastapi import Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
 from jose import JWTError
 from sqlmodel import Session, select
 from app.core.security import decode_token
 from app.db import get_session
 from app.models.user import User
-from typing import Optional
 from app.models.revoked_token import RevokedToken
 
 
@@ -37,9 +36,3 @@ def get_current_user(
         return user
     except JWTError:
         raise HTTPException(status_code=401, detail="Token inválido o expirado.")
-def get_current_user_optional() -> Optional[User]:
-    try:
-        return _get_current_user()
-    except Exception:
-        return None
-    

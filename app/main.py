@@ -1,25 +1,32 @@
 # app/main.py
-from fastapi import FastAPI, APIRouter, Depends
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.staticfiles import StaticFiles
-from sqlalchemy import text
-from sqlmodel import Session
+from sqlalchemy.engine import make_url
 
 from app.core.config import settings, STATIC_DIR
 from app.routers import predict, breeds, auth, history, account
 import app.models.history          # registra PredictionLog / SearchLog
 import app.models.password_reset   # registra PasswordReset
-from app.db import create_db_and_tables, get_session
+from app.db import create_db_and_tables
 from app.routers import dev
 app = FastAPI(title="Dog Breed Classifier", version="1.1")
 
-print(f"[DB] URL activa: {settings.DB_URL}")
+def _safe_db_url(url: str) -> str:
+    try:
+        return make_url(url).render_as_string(hide_password=True)
+    except Exception:
+        return url
+
+print(f"[DB] URL activa: {_safe_db_url(settings.DB_URL)}")
 
 # CORS
+cors_origins = settings.CORS_ORIGINS or (["*"] if settings.DEBUG else [])
+allow_credentials = settings.CORS_ALLOW_CREDENTIALS and "*" not in cors_origins
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
+    allow_origins=cors_origins,
+    allow_credentials=allow_credentials,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -33,25 +40,15 @@ app.include_router(predict.router)   # /predict (protegido)
 app.include_router(breeds.router)    # /labels, /breed_info, /samples
 app.include_router(history.router)   # /history/*
 app.include_router(account.router)   # /account/*
-app.include_router(dev.router)    # /_dev/* (solo si DEBUG)
+if settings.DEBUG:
+    app.include_router(dev.router)    # /_dev/* (solo si DEBUG)
 
 # Crear tablas al iniciar (una sola vez aquí)
 @app.on_event("startup")
 def on_startup():
-    create_db_and_tables()
-
-# ----- Rutas de desarrollo opcionales -----
-if settings.DEBUG:
-    dev = APIRouter(tags=["_dev"])
-
-    @dev.post("/_dev/init-db")
-    def init_db():
+    try:
         create_db_and_tables()
-        return {"detail": "Tablas creadas/migradas."}
-
-    @dev.get("/_dev/db-info")
-    def db_info(session: Session = Depends(get_session)):
-        ver = session.exec(text("select version()")).first()
-        return {"db_url": str(settings.DB_URL), "version": ver}
-
-    app.include_router(dev)
+    except Exception as exc:
+        if settings.DB_STARTUP_STRICT:
+            raise
+        print(f"[Startup] WARNING: no se pudo inicializar DB: {exc}")

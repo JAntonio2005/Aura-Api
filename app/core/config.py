@@ -5,7 +5,7 @@ from pathlib import Path
 import os
 from typing import Optional
 from pydantic_settings import BaseSettings, SettingsConfigDict
-from pydantic import EmailStr
+from pydantic import EmailStr, field_validator
 
 # ----------------------------
 # Rutas base del proyecto
@@ -84,6 +84,32 @@ class Settings(BaseSettings):
 
     # Modo
     DEBUG: bool = os.getenv("DEBUG", "true").lower() == "true"
+    DB_STARTUP_STRICT: bool = os.getenv("DB_STARTUP_STRICT", "false").lower() == "true"
+    CORS_ORIGINS: list[str] = [
+        origin.strip()
+        for origin in os.getenv(
+            "CORS_ORIGINS",
+            "http://127.0.0.1:3000,http://localhost:3000",
+        ).split(",")
+        if origin.strip()
+    ]
+    CORS_ALLOW_CREDENTIALS: bool = (
+        os.getenv("CORS_ALLOW_CREDENTIALS", "true").lower() == "true"
+    )
+
+    @field_validator("DEBUG", "CORS_ALLOW_CREDENTIALS", mode="before")
+    @classmethod
+    def parse_bool_like(cls, value):
+        if isinstance(value, bool):
+            return value
+        if value is None:
+            return False
+        text = str(value).strip().lower()
+        if text in {"1", "true", "yes", "on", "debug", "dev", "development"}:
+            return True
+        if text in {"0", "false", "no", "off", "release", "prod", "production"}:
+            return False
+        return False
 
     # Carga automática de .env (pydantic-settings v2)
     model_config = SettingsConfigDict(
