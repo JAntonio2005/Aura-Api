@@ -51,28 +51,57 @@ def upsert_breed(session: Session, data: Dict[str, Any]):
         session.add(b)
 
 
-def seed_breeds():
-    # JSON de semillas
-    # OJO: ajusta esta ruta a donde REALMENTE está tu archivo
-    seeds_path = Path("exports/static/breeds.json")  # por tu descripción, lo más probable es este path
+def load_breeds_json() -> List[Dict[str, Any]]:
+    candidates = [
+        Path("app/data/breeds.json"),
+        Path("exports/static/breeds.json"),
+    ]
 
-    with open(seeds_path, "r", encoding="utf-8") as f:
-        raw = json.load(f)
+    for path in candidates:
+        if not path.exists():
+            continue
 
-    # aquí usamos el array correcto
-    if isinstance(raw, dict) and "items" in raw:
-        breeds = raw["items"]
-    elif isinstance(raw, list):
-        breeds = raw
-    else:
+        with path.open("r", encoding="utf-8") as f:
+            raw = json.load(f)
+
+        if isinstance(raw, dict) and "items" in raw:
+            return raw["items"]
+        if isinstance(raw, list):
+            return raw
+
         raise ValueError("Formato de breeds.json no soportado (esperaba lista o dict con 'items').")
+
+    raise FileNotFoundError("No se encontró breeds.json en app/data ni en exports/static.")
+
+
+def normalize_breed_data(data: Dict[str, Any]) -> Dict[str, Any]:
+    slug = data.get("slug")
+    if not slug:
+        raise ValueError("Cada raza debe incluir slug.")
+
+    label = data.get("label")
+    if not label:
+        label = slug.split("-", 1)[1] if "-" in slug else slug
+
+    name = data.get("name")
+    if not name:
+        name = label.replace("-", " ").replace("_", " ").title()
+
+    normalized = dict(data)
+    normalized["label"] = label
+    normalized["name"] = name
+    return normalized
+
+
+def seed_breeds():
+    breeds = load_breeds_json()
 
     # Asegura carpetas estáticas mínimas
     (STATIC_DIR / "breeds").mkdir(parents=True, exist_ok=True)
 
     with Session(engine) as session:
         for item in breeds:
-            upsert_breed(session, item)
+            upsert_breed(session, normalize_breed_data(item))
         session.commit()
 
 

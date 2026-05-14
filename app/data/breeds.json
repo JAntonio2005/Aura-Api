@@ -1,31 +1,2162 @@
-[
-  {
-    "slug": "chihuahua",
-    "label": "chihuahua",
-    "name": "Chihuahua",
-    "description": "Pequeño y alerta, ideal como compañero. Necesita socialización.",
-    "temperament": "Vigilante, leal, vivaz",
-    "origin": "México",
-    "size": "toy",
-    "life_span": "12–18 años",
-    "images": [
-      "/static/breeds/chihuahua/1.jpg",
-      "/static/breeds/chihuahua/2.jpg",
-      "/static/breeds/chihuahua/3.jpg",
-      "/static/breeds/chihuahua/4.jpg",
-      "/static/breeds/chihuahua/5.jpg",
-      "/static/breeds/chihuahua/6.jpg"
-    ]
-  },
-  {
-    "slug": "german-shepherd",
-    "label": "german_shepherd",
-    "name": "Pastor Alemán",
-    "description": "Inteligente, versátil y protector. Excelente para trabajo y familia.",
-    "temperament": "Fiel, seguro, obediente",
-    "origin": "Alemania",
-    "size": "large",
-    "life_span": "9–13 años"
-    
-  }
-]
+{
+  "total": 120,
+  "items": [
+    {
+      "slug": "n02085620-chihuahua",
+      "label": "chihuahua",
+      "name": "Chihuahua",
+      "description": "Originario de México, es la raza de perro más pequeña del mundo. Su tamaño compacto y su temperamento valiente lo hacen un excelente compañero. Es muy leal, alerta y suele formar un fuerte vínculo con su dueño.",
+      "temperament": "Valiente, leal, alerta y afectuoso.",
+      "origin": "México",
+      "size": "Pequeño",
+      "life_span": "12-20 años",
+      "images": [
+        "/static/breeds/n02085620-chihuahua/1.jpg",
+        "/static/breeds/n02085620-chihuahua/2.jpg",
+        "/static/breeds/n02085620-chihuahua/3.jpg",
+        "/static/breeds/n02085620-chihuahua/4.jpg",
+        "/static/breeds/n02085620-chihuahua/5.jpg",
+        "/static/breeds/n02085620-chihuahua/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02085782-japanese-spaniel",
+      "label": "japanese-spaniel",
+      "name": "Japanese Spaniel",
+      "description": "Pequeño perro de compañía japonés, elegante y cariñoso, con pelaje sedoso.",
+      "temperament": "Tranquilo, afectuoso, gentil.",
+      "origin": "Japón",
+      "size": "Pequeño",
+      "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02085782-japanese-spaniel/1.jpg",
+        "/static/breeds/n02085782-japanese-spaniel/2.jpg",
+        "/static/breeds/n02085782-japanese-spaniel/3.jpg",
+        "/static/breeds/n02085782-japanese-spaniel/4.jpg",
+        "/static/breeds/n02085782-japanese-spaniel/5.jpg",
+        "/static/breeds/n02085782-japanese-spaniel/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02085936-maltese-dog",
+      "label": "maltese-dog",
+      "name": "Maltese Dog",
+       "description": "Raza mediterránea conocida por su pelaje blanco y carácter alegre y sociable.",
+  "temperament": "Cariñoso, amistoso, vivaz.",
+  "origin": "Mediterráneo",
+  "size": "Pequeño",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02085936-maltese-dog/1.jpg",
+        "/static/breeds/n02085936-maltese-dog/2.jpg",
+        "/static/breeds/n02085936-maltese-dog/3.jpg",
+        "/static/breeds/n02085936-maltese-dog/4.jpg",
+        "/static/breeds/n02085936-maltese-dog/5.jpg",
+        "/static/breeds/n02085936-maltese-dog/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02086079-pekinese",
+      "label": "pekinese",
+      "name": "Pekinese",
+       "description": "Perro chino de la corte imperial, pequeño, con melena abundante y carácter fuerte.",
+  "temperament": "Leal, independiente, valiente.",
+  "origin": "China",
+  "size": "Pequeño",
+  "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02086079-pekinese/1.jpg",
+        "/static/breeds/n02086079-pekinese/2.jpg",
+        "/static/breeds/n02086079-pekinese/3.jpg",
+        "/static/breeds/n02086079-pekinese/4.jpg",
+        "/static/breeds/n02086079-pekinese/5.jpg",
+        "/static/breeds/n02086079-pekinese/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02086240-shih-tzu",
+      "label": "shih-tzu",
+      "name": "Shih Tzu",
+     "description": "Raza tibetana de pelaje largo, sociable y afectuosa, ideal para interiores.",
+  "temperament": "Cariñoso, amistoso, tranquilo.",
+  "origin": "Tíbet / China",
+  "size": "Pequeño",
+  "life_span": "12-16 años",
+      "images": [
+        "/static/breeds/n02086240-shih-tzu/1.jpg",
+        "/static/breeds/n02086240-shih-tzu/2.jpg",
+        "/static/breeds/n02086240-shih-tzu/3.jpg",
+        "/static/breeds/n02086240-shih-tzu/4.jpg",
+        "/static/breeds/n02086240-shih-tzu/5.jpg",
+        "/static/breeds/n02086240-shih-tzu/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02086646-blenheim-spaniel",
+      "label": "blenheim-spaniel",
+      "name": "Blenheim Spaniel",
+       "description": "Pequeño spaniel inglés, elegante y amistoso, muy apreciado por la realeza.",
+  "temperament": "Dócil, cariñoso, sociable.",
+  "origin": "Inglaterra",
+  "size": "Pequeño",
+  "life_span": "10-16 años",
+      "images": [
+        "/static/breeds/n02086646-blenheim-spaniel/1.jpg",
+        "/static/breeds/n02086646-blenheim-spaniel/2.jpg",
+        "/static/breeds/n02086646-blenheim-spaniel/3.jpg",
+        "/static/breeds/n02086646-blenheim-spaniel/4.jpg",
+        "/static/breeds/n02086646-blenheim-spaniel/5.jpg",
+        "/static/breeds/n02086646-blenheim-spaniel/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02086910-papillon",
+      "label": "papillon",
+      "name": "Papillon",
+      "description": "Pequeño perro francés con orejas en forma de mariposa, inteligente y activo.",
+  "temperament": "Alegre, sociable, muy inteligente.",
+  "origin": "Francia",
+  "size": "Pequeño",
+  "life_span": "13-15 años",
+      "images": [
+        "/static/breeds/n02086910-papillon/1.jpg",
+        "/static/breeds/n02086910-papillon/2.jpg",
+        "/static/breeds/n02086910-papillon/3.jpg",
+        "/static/breeds/n02086910-papillon/4.jpg",
+        "/static/breeds/n02086910-papillon/5.jpg",
+        "/static/breeds/n02086910-papillon/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02087046-toy-terrier",
+      "label": "toy-terrier",
+      "name": "Toy Terrier",
+       "description": "Pequeño terrier inglés, valiente y energético, originalmente cazador de roedores.",
+  "temperament": "Intrépido, alerta, activo.",
+  "origin": "Inglaterra",
+  "size": "Muy pequeño",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02087046-toy-terrier/1.jpg",
+        "/static/breeds/n02087046-toy-terrier/2.jpg",
+        "/static/breeds/n02087046-toy-terrier/3.jpg",
+        "/static/breeds/n02087046-toy-terrier/4.jpg",
+        "/static/breeds/n02087046-toy-terrier/5.jpg",
+        "/static/breeds/n02087046-toy-terrier/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02087394-rhodesian-ridgeback",
+      "label": "rhodesian-ridgeback",
+      "name": "Rhodesian Ridgeback",
+      "description": "Perro sudafricano grande y atlético, famoso por la cresta en su espalda.",
+  "temperament": "Valiente, protector, independiente.",
+  "origin": "Sudáfrica",
+  "size": "Grande",
+  "life_span": "10-12 años",
+      "images": [
+        "/static/breeds/n02087394-rhodesian-ridgeback/1.jpg",
+        "/static/breeds/n02087394-rhodesian-ridgeback/2.jpg",
+        "/static/breeds/n02087394-rhodesian-ridgeback/3.jpg",
+        "/static/breeds/n02087394-rhodesian-ridgeback/4.jpg",
+        "/static/breeds/n02087394-rhodesian-ridgeback/5.jpg",
+        "/static/breeds/n02087394-rhodesian-ridgeback/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02088094-afghan-hound",
+      "label": "afghan-hound",
+      "name": "Afghan Hound",
+       "description": "Raza afgana elegante con pelaje largo; veloz, majestuosa y reservada.",
+  "temperament": "Independiente, noble, sensible.",
+  "origin": "Afganistán",
+  "size": "Grande",
+  "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02088094-afghan-hound/1.jpg",
+        "/static/breeds/n02088094-afghan-hound/2.jpg",
+        "/static/breeds/n02088094-afghan-hound/3.jpg",
+        "/static/breeds/n02088094-afghan-hound/4.jpg",
+        "/static/breeds/n02088094-afghan-hound/5.jpg",
+        "/static/breeds/n02088094-afghan-hound/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02088238-basset",
+      "label": "basset",
+      "name": "Basset",
+      "description": "Originario de Francia, este sabueso de patas cortas posee un olfato excepcional y una apariencia inconfundible. Es calmado, cariñoso y disfruta pasar tiempo con su familia. Aunque algo testarudo, es un compañero muy noble y paciente.",
+  "temperament": "Tranquilo, afectuoso, terco, amable.",
+  "origin": "Francia",
+  "size": "Mediano",
+  "life_span": "10-12 años",
+      "images": [
+        "/static/breeds/n02088238-basset/1.jpg",
+        "/static/breeds/n02088238-basset/2.jpg",
+        "/static/breeds/n02088238-basset/3.jpg",
+        "/static/breeds/n02088238-basset/4.jpg",
+        "/static/breeds/n02088238-basset/5.jpg",
+        "/static/breeds/n02088238-basset/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02088364-beagle",
+      "label": "beagle",
+      "name": "Beagle",
+      "description": "Perro inglés de caza menor, conocido por su naturaleza alegre y curiosa. Muy activo, inteligente y sociable, ideal para familias. Su energía y sentido del olfato lo hacen excelente explorador.",
+  "temperament": "Alegre, amigable, curioso, energético.",
+  "origin": "Inglaterra",
+  "size": "Mediano",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02088364-beagle/1.jpg",
+        "/static/breeds/n02088364-beagle/2.jpg",
+        "/static/breeds/n02088364-beagle/3.jpg",
+        "/static/breeds/n02088364-beagle/4.jpg",
+        "/static/breeds/n02088364-beagle/5.jpg",
+        "/static/breeds/n02088364-beagle/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02088466-bloodhound",
+      "label": "bloodhound",
+      "name": "Bloodhound",
+      "description": "Raza belga famosa por tener el mejor olfato entre los perros. Su aspecto grande y orejas largas lo hacen muy distintivo. Es gentil, paciente y muy tranquilo, aunque necesita espacio y paseos largos.",
+  "temperament": "Gentil, paciente, tranquilo, persistente.",
+  "origin": "Bélgica",
+  "size": "Grande",
+  "life_span": "10-12 años",
+      "images": [
+        "/static/breeds/n02088466-bloodhound/1.jpg",
+        "/static/breeds/n02088466-bloodhound/2.jpg",
+        "/static/breeds/n02088466-bloodhound/3.jpg",
+        "/static/breeds/n02088466-bloodhound/4.jpg",
+        "/static/breeds/n02088466-bloodhound/5.jpg",
+        "/static/breeds/n02088466-bloodhound/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02088632-bluetick",
+      "label": "bluetick",
+      "name": "Bluetick",
+       "description": "Coonhound estadounidense de pelaje moteado azul grisáceo, criado para el rastreo. Tiene muchísima energía y un ladrido muy característico. Es leal, trabajador y necesita mucho ejercicio y actividades al aire libre para estar equilibrado.",
+  "temperament": "Leal, enérgico, vocal, trabajador.",
+  "origin": "Estados Unidos",
+  "size": "Grande",
+  "life_span": "11-12 años",
+      "images": [
+        "/static/breeds/n02088632-bluetick/1.jpg",
+        "/static/breeds/n02088632-bluetick/2.jpg",
+        "/static/breeds/n02088632-bluetick/3.jpg",
+        "/static/breeds/n02088632-bluetick/4.jpg",
+        "/static/breeds/n02088632-bluetick/5.jpg",
+        "/static/breeds/n02088632-bluetick/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02089078-black-and-tan-coonhound",
+      "label": "black-and-tan-coonhound",
+      "name": "Black And Tan Coonhound",
+      "description": "Perro estadounidense criado para rastreo, con pelaje moteado azul grisáceo. Es energético, leal y muy vocal, ideal para actividades al aire libre. Requiere ejercicio intenso y estimulación mental.",
+  "temperament": "Leal, activo, vocal, inteligente.",
+  "origin": "Estados Unidos",
+  "size": "Grande",
+  "life_span": "11-12 años",
+      "images": [
+        "/static/breeds/n02089078-black-and-tan-coonhound/1.jpg",
+        "/static/breeds/n02089078-black-and-tan-coonhound/2.jpg",
+        "/static/breeds/n02089078-black-and-tan-coonhound/3.jpg",
+        "/static/breeds/n02089078-black-and-tan-coonhound/4.jpg",
+        "/static/breeds/n02089078-black-and-tan-coonhound/5.jpg",
+        "/static/breeds/n02089078-black-and-tan-coonhound/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02089867-walker-hound",
+      "label": "walker-hound",
+      "name": "Walker Hound",
+      "description": "Perro de caza estadounidense muy rápido y resistente. Conocido por su entusiasmo, energía y habilidades de rastreo. Es sociable, alegre y necesita actividad física frecuente para satisfacer su naturaleza activa.",
+  "temperament": "Energético, amigable, trabajador.",
+  "origin": "Estados Unidos",
+  "size": "Mediano",
+  "life_span": "12-13 años",
+      "images": [
+        "/static/breeds/n02089867-walker-hound/1.jpg",
+        "/static/breeds/n02089867-walker-hound/2.jpg",
+        "/static/breeds/n02089867-walker-hound/3.jpg",
+        "/static/breeds/n02089867-walker-hound/4.jpg",
+        "/static/breeds/n02089867-walker-hound/5.jpg",
+        "/static/breeds/n02089867-walker-hound/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02089973-english-foxhound",
+      "label": "english-foxhound",
+      "name": "English Foxhound",
+      "description": "Raza inglesa criada para la caza del zorro en jaurías. Es resistente, sociable y muy activo. Se adapta mejor a hogares con espacio y personas que disfruten del ejercicio al aire libre.",
+  "temperament": "Sociable, fuerte, activo, equilibrado.",
+  "origin": "Inglaterra",
+  "size": "Grande",
+  "life_span": "10-13 años",
+      "images": [
+        "/static/breeds/n02089973-english-foxhound/1.jpg",
+        "/static/breeds/n02089973-english-foxhound/2.jpg",
+        "/static/breeds/n02089973-english-foxhound/3.jpg",
+        "/static/breeds/n02089973-english-foxhound/4.jpg",
+        "/static/breeds/n02089973-english-foxhound/5.jpg",
+        "/static/breeds/n02089973-english-foxhound/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02090379-redbone",
+      "label": "redbone",
+      "name": "Redbone",
+     "description": "Originario de EE.UU., destaca por su hermoso pelaje rojizo y capacidades como cazador versátil. Es atlético, leal y muy cariñoso en el hogar. Requiere ejercicio constante y exploración.",
+  "temperament": "Leal, valiente, cariñoso, activo.",
+  "origin": "Estados Unidos",
+  "size": "Grande",
+  "life_span": "11-12 años",
+      "images": [
+        "/static/breeds/n02090379-redbone/1.jpg",
+        "/static/breeds/n02090379-redbone/2.jpg",
+        "/static/breeds/n02090379-redbone/3.jpg",
+        "/static/breeds/n02090379-redbone/4.jpg",
+        "/static/breeds/n02090379-redbone/5.jpg",
+        "/static/breeds/n02090379-redbone/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02090622-borzoi",
+      "label": "borzoi",
+      "name": "Borzoi",
+      "description": "Galgo ruso elegante y majestuoso, criado originalmente para cazar lobos. Es sereno, independiente y tiene un carácter noble. Muy veloz y amante del espacio abierto.",
+  "temperament": "Calmado, independiente, noble.",
+  "origin": "Rusia",
+  "size": "Grande",
+  "life_span": "10-12 años",
+      "images": [
+        "/static/breeds/n02090622-borzoi/1.jpg",
+        "/static/breeds/n02090622-borzoi/2.jpg",
+        "/static/breeds/n02090622-borzoi/3.jpg",
+        "/static/breeds/n02090622-borzoi/4.jpg",
+        "/static/breeds/n02090622-borzoi/5.jpg",
+        "/static/breeds/n02090622-borzoi/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02090721-irish-wolfhound",
+      "label": "irish-wolfhound",
+      "name": "Irish Wolfhound",
+      "description": "Una de las razas más grandes del mundo, originaria de Irlanda. A pesar de su tamaño imponente, es extremadamente gentil, paciente y tranquila. Fue criado para cazar lobos, por lo que posee gran fuerza y resistencia.",
+  "temperament": "Gentil, tranquilo, noble, leal.",
+  "origin": "Irlanda",
+  "size": "Gigante",
+  "life_span": "6-10 años",
+      "images": [
+        "/static/breeds/n02090721-irish-wolfhound/1.jpg",
+        "/static/breeds/n02090721-irish-wolfhound/2.jpg",
+        "/static/breeds/n02090721-irish-wolfhound/3.jpg",
+        "/static/breeds/n02090721-irish-wolfhound/4.jpg",
+        "/static/breeds/n02090721-irish-wolfhound/5.jpg",
+        "/static/breeds/n02090721-irish-wolfhound/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02091032-italian-greyhound",
+      "label": "italian-greyhound",
+      "name": "Italian Greyhound",
+      "description": "El galgo italiano es una versión pequeña y elegante de los galgos clásicos. Ágil, delicado y muy afectuoso con su familia. Sensible y tranquilo en casa, pero sorprendentemente veloz al correr.",
+  "temperament": "Cariñoso, sensible, elegante, tímido.",
+  "origin": "Italia",
+  "size": "Pequeño",
+  "life_span": "13-15 años",
+      "images": [
+        "/static/breeds/n02091032-italian-greyhound/1.jpg",
+        "/static/breeds/n02091032-italian-greyhound/2.jpg",
+        "/static/breeds/n02091032-italian-greyhound/3.jpg",
+        "/static/breeds/n02091032-italian-greyhound/4.jpg",
+        "/static/breeds/n02091032-italian-greyhound/5.jpg",
+        "/static/breeds/n02091032-italian-greyhound/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02091134-whippet",
+      "label": "whippet",
+      "name": "Whippet",
+      "description": "Galgo inglés de tamaño mediano, criado originalmente para carreras. Es extremadamente rápido, pero calmado y dulce dentro del hogar. Ideal para familias que buscan un perro afectuoso y tranquilo.",
+  "temperament": "Dócil, afectuoso, veloz, sensible.",
+  "origin": "Inglaterra",
+  "size": "Mediano",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02091134-whippet/1.jpg",
+        "/static/breeds/n02091134-whippet/2.jpg",
+        "/static/breeds/n02091134-whippet/3.jpg",
+        "/static/breeds/n02091134-whippet/4.jpg",
+        "/static/breeds/n02091134-whippet/5.jpg",
+        "/static/breeds/n02091134-whippet/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02091244-ibizan-hound",
+      "label": "ibizan-hound",
+      "name": "Ibizan Hound",
+      "description": "Originario de las Islas Baleares, este perro delgado y elegante destaca por su agilidad y oído agudo. Es activo, inteligente y juguetón, aunque puede ser algo independiente. Ama correr y explorar.",
+  "temperament": "Alegre, independiente, inteligente, activo.",
+  "origin": "España",
+  "size": "Mediano",
+  "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02091244-ibizan-hound/1.jpg",
+        "/static/breeds/n02091244-ibizan-hound/2.jpg",
+        "/static/breeds/n02091244-ibizan-hound/3.jpg",
+        "/static/breeds/n02091244-ibizan-hound/4.jpg",
+        "/static/breeds/n02091244-ibizan-hound/5.jpg",
+        "/static/breeds/n02091244-ibizan-hound/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02091467-norwegian-elkhound",
+      "label": "norwegian-elkhound",
+      "name": "Norwegian Elkhound",
+      "description": "Perro nórdico de caza, fuerte y resistente, utilizado para rastrear alces. Tiene un carácter protector y valiente, pero también es afectuoso con su familia. Excelente para climas fríos y actividades al aire libre.",
+  "temperament": "Valiente, leal, protector, energético.",
+  "origin": "Noruega",
+  "size": "Mediano",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02091467-norwegian-elkhound/1.jpg",
+        "/static/breeds/n02091467-norwegian-elkhound/2.jpg",
+        "/static/breeds/n02091467-norwegian-elkhound/3.jpg",
+        "/static/breeds/n02091467-norwegian-elkhound/4.jpg",
+        "/static/breeds/n02091467-norwegian-elkhound/5.jpg",
+        "/static/breeds/n02091467-norwegian-elkhound/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02091635-otterhound",
+      "label": "otterhound",
+      "name": "Otterhound",
+       "description": "Raza inglesa criada para cazar nutrias, con excelente olfato y habilidades acuáticas. Grande, amigable y con pelaje áspero. Le encanta el agua, el ejercicio y convivir en familia.",
+  "temperament": "Alegre, sociable, activo, amable.",
+  "origin": "Inglaterra",
+  "size": "Grande",
+  "life_span": "10-13 años",
+      "images": [
+        "/static/breeds/n02091635-otterhound/1.jpg",
+        "/static/breeds/n02091635-otterhound/2.jpg",
+        "/static/breeds/n02091635-otterhound/3.jpg",
+        "/static/breeds/n02091635-otterhound/4.jpg",
+        "/static/breeds/n02091635-otterhound/5.jpg",
+        "/static/breeds/n02091635-otterhound/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02091831-saluki",
+      "label": "saluki",
+      "name": "Saluki",
+      "description": "Antiguo galgo árabe, símbolo de nobleza en el Medio Oriente. Delgado, elegante y extremadamente veloz. De carácter reservado, pero muy leal a quienes confía.",
+  "temperament": "Reservado, noble, sensible, elegante.",
+  "origin": "Medio Oriente",
+  "size": "Grande",
+  "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02091831-saluki/1.jpg",
+        "/static/breeds/n02091831-saluki/2.jpg",
+        "/static/breeds/n02091831-saluki/3.jpg",
+        "/static/breeds/n02091831-saluki/4.jpg",
+        "/static/breeds/n02091831-saluki/5.jpg",
+        "/static/breeds/n02091831-saluki/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02092002-scottish-deerhound",
+      "label": "scottish-deerhound",
+      "name": "Scottish Deerhound",
+     "description": "Galgo escocés criado para cazar ciervos. Alto, musculoso y de naturaleza gentil. Es noble, calmado y muy leal, ideal para familias que disfrutan de espacios amplios.",
+  "temperament": "Gentil, noble, calmado, leal.",
+  "origin": "Escocia",
+  "size": "Grande",
+  "life_span": "8-11 años",
+      "images": [
+        "/static/breeds/n02092002-scottish-deerhound/1.jpg",
+        "/static/breeds/n02092002-scottish-deerhound/2.jpg",
+        "/static/breeds/n02092002-scottish-deerhound/3.jpg",
+        "/static/breeds/n02092002-scottish-deerhound/4.jpg",
+        "/static/breeds/n02092002-scottish-deerhound/5.jpg",
+        "/static/breeds/n02092002-scottish-deerhound/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02092339-weimaraner",
+      "label": "weimaraner",
+      "name": "Weimaraner",
+      "description": "Raza alemana muy versátil en la caza, reconocible por su pelaje gris plata. Inteligente, activo y extremadamente apegado a su familia. Requiere ejercicio diario y estimulación mental.",
+  "temperament": "Inteligente, leal, energético, sensible.",
+  "origin": "Alemania",
+  "size": "Grande",
+  "life_span": "11-14 años",
+      "images": [
+        "/static/breeds/n02092339-weimaraner/1.jpg",
+        "/static/breeds/n02092339-weimaraner/2.jpg",
+        "/static/breeds/n02092339-weimaraner/3.jpg",
+        "/static/breeds/n02092339-weimaraner/4.jpg",
+        "/static/breeds/n02092339-weimaraner/5.jpg",
+        "/static/breeds/n02092339-weimaraner/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02093256-staffordshire-bullterrier",
+      "label": "staffordshire-bullterrier",
+      "name": "Staffordshire Bullterrier",
+       "description": "Perro inglés compacto y fuerte, famoso por su valentía y afecto hacia los humanos. Muy cariñoso con niños, juguetón y leal. Requiere socialización adecuada.",
+  "temperament": "Valiente, afectuoso, enérgico, leal.",
+  "origin": "Inglaterra",
+  "size": "Mediano",
+  "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02093256-staffordshire-bullterrier/1.jpg",
+        "/static/breeds/n02093256-staffordshire-bullterrier/2.jpg",
+        "/static/breeds/n02093256-staffordshire-bullterrier/3.jpg",
+        "/static/breeds/n02093256-staffordshire-bullterrier/4.jpg",
+        "/static/breeds/n02093256-staffordshire-bullterrier/5.jpg",
+        "/static/breeds/n02093256-staffordshire-bullterrier/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02093428-american-staffordshire-terrier",
+      "label": "american-staffordshire-terrier",
+      "name": "American Staffordshire Terrier",
+      "description": "Raza estadounidense sólida y musculosa, confiada y protectora. A pesar de su apariencia fuerte, es cariñosa y muy leal. Requiere ejercicio y una guía firme pero amorosa.",
+  "temperament": "Seguro, protector, leal, valiente.",
+  "origin": "Estados Unidos",
+  "size": "Mediano",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02093428-american-staffordshire-terrier/1.jpg",
+        "/static/breeds/n02093428-american-staffordshire-terrier/2.jpg",
+        "/static/breeds/n02093428-american-staffordshire-terrier/3.jpg",
+        "/static/breeds/n02093428-american-staffordshire-terrier/4.jpg",
+        "/static/breeds/n02093428-american-staffordshire-terrier/5.jpg",
+        "/static/breeds/n02093428-american-staffordshire-terrier/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02093647-bedlington-terrier",
+      "label": "bedlington-terrier",
+      "name": "Bedlington Terrier",
+      "description": "Terrier inglés reconocido por su aspecto similar al de una oveja. Es ágil y atlético, pero también muy cariñoso en casa. Tiene un carácter valiente, protector y algo independiente.",
+  "temperament": "Valiente, afectuoso, alerta, independiente.",
+  "origin": "Inglaterra",
+  "size": "Pequeño-Mediano",
+  "life_span": "11-16 años",
+      "images": [
+        "/static/breeds/n02093647-bedlington-terrier/1.jpg",
+        "/static/breeds/n02093647-bedlington-terrier/2.jpg",
+        "/static/breeds/n02093647-bedlington-terrier/3.jpg",
+        "/static/breeds/n02093647-bedlington-terrier/4.jpg",
+        "/static/breeds/n02093647-bedlington-terrier/5.jpg",
+        "/static/breeds/n02093647-bedlington-terrier/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02093754-border-terrier",
+      "label": "border-terrier",
+      "name": "Border Terrier",
+      "description": "Pequeño terrier originario de la frontera entre Inglaterra y Escocia. Resistente, curioso y muy leal, fue criado para acompañar a caballos y cazar zorros. Excelente compañero para familias activas.",
+  "temperament": "Alegre, leal, intrépido, amigable.",
+  "origin": "Reino Unido",
+  "size": "Pequeño",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02093754-border-terrier/1.jpg",
+        "/static/breeds/n02093754-border-terrier/2.jpg",
+        "/static/breeds/n02093754-border-terrier/3.jpg",
+        "/static/breeds/n02093754-border-terrier/4.jpg",
+        "/static/breeds/n02093754-border-terrier/5.jpg",
+        "/static/breeds/n02093754-border-terrier/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02093859-kerry-blue-terrier",
+      "label": "kerry-blue-terrier",
+      "name": "Kerry Blue Terrier",
+       "description": "Terrier irlandés de pelaje azul acero muy distintivo. Es fuerte, trabajador y buen perro de granja, pero también muy cariñoso en el hogar. Requiere educación firme y socialización temprana.",
+  "temperament": "Valiente, inteligente, protector, afectuoso.",
+  "origin": "Irlanda",
+  "size": "Mediano",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02093859-kerry-blue-terrier/1.jpg",
+        "/static/breeds/n02093859-kerry-blue-terrier/2.jpg",
+        "/static/breeds/n02093859-kerry-blue-terrier/3.jpg",
+        "/static/breeds/n02093859-kerry-blue-terrier/4.jpg",
+        "/static/breeds/n02093859-kerry-blue-terrier/5.jpg",
+        "/static/breeds/n02093859-kerry-blue-terrier/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02093991-irish-terrier",
+      "label": "irish-terrier",
+      "name": "Irish Terrier",
+       "description": "Antigua raza irlandesa de color rojizo, conocida por su espíritu valiente y lealtad. Es un perro activo, juguetón y buen guardián del hogar. Se apega mucho a su familia.",
+  "temperament": "Valiente, leal, enérgico, afectuoso.",
+  "origin": "Irlanda",
+  "size": "Mediano",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02093991-irish-terrier/1.jpg",
+        "/static/breeds/n02093991-irish-terrier/2.jpg",
+        "/static/breeds/n02093991-irish-terrier/3.jpg",
+        "/static/breeds/n02093991-irish-terrier/4.jpg",
+        "/static/breeds/n02093991-irish-terrier/5.jpg",
+        "/static/breeds/n02093991-irish-terrier/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02094114-norfolk-terrier",
+      "label": "norfolk-terrier",
+      "name": "Norfolk Terrier",
+      "description": "Pequeño terrier inglés de orejas caídas, originalmente cazador de roedores. Es alegre, intrépido y muy sociable. Se adapta bien a pisos siempre que tenga paseos y juego diario.",
+  "temperament": "Alegre, sociable, intrépido, cariñoso.",
+  "origin": "Inglaterra",
+  "size": "Pequeño",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02094114-norfolk-terrier/1.jpg",
+        "/static/breeds/n02094114-norfolk-terrier/2.jpg",
+        "/static/breeds/n02094114-norfolk-terrier/3.jpg",
+        "/static/breeds/n02094114-norfolk-terrier/4.jpg",
+        "/static/breeds/n02094114-norfolk-terrier/5.jpg",
+        "/static/breeds/n02094114-norfolk-terrier/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02094258-norwich-terrier",
+      "label": "norwich-terrier",
+      "name": "Norwich Terrier",
+      "description": "Terrier inglés muy parecido al Norfolk, pero con orejas erguidas. Es vivaz, afectuoso y curioso, con mucha energía. Ideal para personas activas que buscan un perro pequeño pero intenso.",
+  "temperament": "Vivaz, cariñoso, curioso, valiente.",
+  "origin": "Inglaterra",
+  "size": "Pequeño",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02094258-norwich-terrier/1.jpg",
+        "/static/breeds/n02094258-norwich-terrier/2.jpg",
+        "/static/breeds/n02094258-norwich-terrier/3.jpg",
+        "/static/breeds/n02094258-norwich-terrier/4.jpg",
+        "/static/breeds/n02094258-norwich-terrier/5.jpg",
+        "/static/breeds/n02094258-norwich-terrier/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02094433-yorkshire-terrier",
+      "label": "yorkshire-terrier",
+      "name": "Yorkshire Terrier",
+      "description": "Pequeña raza de compañía originaria de Yorkshire. De pelaje largo y sedoso, es elegante pero con carácter fuerte. Muy leal a su dueño, alerta y valiente pese a su tamaño.",
+  "temperament": "Valiente, alerta, afectuoso, vivaz.",
+  "origin": "Inglaterra",
+  "size": "Muy pequeño",
+  "life_span": "13-16 años",
+      "images": [
+        "/static/breeds/n02094433-yorkshire-terrier/1.jpg",
+        "/static/breeds/n02094433-yorkshire-terrier/2.jpg",
+        "/static/breeds/n02094433-yorkshire-terrier/3.jpg",
+        "/static/breeds/n02094433-yorkshire-terrier/4.jpg",
+        "/static/breeds/n02094433-yorkshire-terrier/5.jpg",
+        "/static/breeds/n02094433-yorkshire-terrier/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02095314-wire-haired-fox-terrier",
+      "label": "wire-haired-fox-terrier",
+      "name": "Wire Haired Fox Terrier",
+       "description": "Terrier inglés de pelo duro, muy enérgico y juguetón. Originalmente cazador de zorros, hoy es un perro deportivo y activo. Necesita ejercicio diario y juegos para canalizar su energía.",
+  "temperament": "Enérgico, intrépido, juguetón, alerta.",
+  "origin": "Inglaterra",
+  "size": "Pequeño-Mediano",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02095314-wire-haired-fox-terrier/1.jpg",
+        "/static/breeds/n02095314-wire-haired-fox-terrier/2.jpg",
+        "/static/breeds/n02095314-wire-haired-fox-terrier/3.jpg",
+        "/static/breeds/n02095314-wire-haired-fox-terrier/4.jpg",
+        "/static/breeds/n02095314-wire-haired-fox-terrier/5.jpg",
+        "/static/breeds/n02095314-wire-haired-fox-terrier/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02095570-lakeland-terrier",
+      "label": "lakeland-terrier",
+      "name": "Lakeland Terrier",
+       "description": "Terrier de la región de los Lagos en Inglaterra. Es pequeño, decidido y muy vivaz, criado para proteger rebaños de zorros. Cariñoso con su familia, pero con fuerte instinto cazador.",
+  "temperament": "Decidido, alegre, valiente, leal.",
+  "origin": "Inglaterra",
+  "size": "Pequeño",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02095570-lakeland-terrier/1.jpg",
+        "/static/breeds/n02095570-lakeland-terrier/2.jpg",
+        "/static/breeds/n02095570-lakeland-terrier/3.jpg",
+        "/static/breeds/n02095570-lakeland-terrier/4.jpg",
+        "/static/breeds/n02095570-lakeland-terrier/5.jpg",
+        "/static/breeds/n02095570-lakeland-terrier/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02095889-sealyham-terrier",
+      "label": "sealyham-terrier",
+      "name": "Sealyham Terrier",
+      "description": "Terrier galés compacto y de pelaje blanco. Fue criado para la caza, pero hoy destaca como perro de compañía. Es valiente, amable y algo payaso, con un carácter muy entrañable.",
+  "temperament": "Valiente, amistoso, juguetón, leal.",
+  "origin": "Gales",
+  "size": "Pequeño",
+  "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02095889-sealyham-terrier/1.jpg",
+        "/static/breeds/n02095889-sealyham-terrier/2.jpg",
+        "/static/breeds/n02095889-sealyham-terrier/3.jpg",
+        "/static/breeds/n02095889-sealyham-terrier/4.jpg",
+        "/static/breeds/n02095889-sealyham-terrier/5.jpg",
+        "/static/breeds/n02095889-sealyham-terrier/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02096051-airedale",
+      "label": "airedale",
+      "name": "Airedale",
+      "description": "Conocido como el ‘rey de los terriers’, es el más grande de su tipo. Originario de Yorkshire, combina fuerza, inteligencia y un gran espíritu trabajador. Es valiente, leal y excelente para familias activas.",
+  "temperament": "Inteligente, valiente, enérgico, leal.",
+  "origin": "Inglaterra",
+  "size": "Grande",
+  "life_span": "10-13 años",
+      "images": [
+        "/static/breeds/n02096051-airedale/1.jpg",
+        "/static/breeds/n02096051-airedale/2.jpg",
+        "/static/breeds/n02096051-airedale/3.jpg",
+        "/static/breeds/n02096051-airedale/4.jpg",
+        "/static/breeds/n02096051-airedale/5.jpg",
+        "/static/breeds/n02096051-airedale/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02096177-cairn",
+      "label": "cairn",
+      "name": "Cairn",
+       "description": "Pequeño terrier escocés conocido por su papel en ‘El Mago de Oz’ (Toto). Tiene mucha energía, es curioso y valiente. Le encanta explorar, cavar y formar lazos fuertes con su familia.",
+  "temperament": "Alegre, valiente, curioso, activo.",
+  "origin": "Escocia",
+  "size": "Pequeño",
+  "life_span": "13-15 años",
+      "images": [
+        "/static/breeds/n02096177-cairn/1.jpg",
+        "/static/breeds/n02096177-cairn/2.jpg",
+        "/static/breeds/n02096177-cairn/3.jpg",
+        "/static/breeds/n02096177-cairn/4.jpg",
+        "/static/breeds/n02096177-cairn/5.jpg",
+        "/static/breeds/n02096177-cairn/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02096294-australian-terrier",
+      "label": "australian-terrier",
+      "name": "Australian Terrier",
+      "description": "Terrier australiano robusto y trabajador, criado originalmente para controlar plagas. Es pequeño pero muy protector y fiel. Tiene un carácter alegre, alerta y lleno de energía.",
+  "temperament": "Alerta, valiente, leal, activo.",
+  "origin": "Australia",
+  "size": "Pequeño",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02096294-australian-terrier/1.jpg",
+        "/static/breeds/n02096294-australian-terrier/2.jpg",
+        "/static/breeds/n02096294-australian-terrier/3.jpg",
+        "/static/breeds/n02096294-australian-terrier/4.jpg",
+        "/static/breeds/n02096294-australian-terrier/5.jpg",
+        "/static/breeds/n02096294-australian-terrier/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02096437-dandie-dinmont",
+      "label": "dandie-dinmont",
+      "name": "Dandie Dinmont",
+       "description": "Terrier escocés de cuerpo largo y cabeza adornada con un característico mechón. Es tranquilo, afectuoso y muy fiel a su dueño. Aunque pequeño, posee gran valentía y determinación.",
+  "temperament": "Tranquilo, valiente, afectuoso, independiente.",
+  "origin": "Escocia",
+  "size": "Pequeño",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02096437-dandie-dinmont/1.jpg",
+        "/static/breeds/n02096437-dandie-dinmont/2.jpg",
+        "/static/breeds/n02096437-dandie-dinmont/3.jpg",
+        "/static/breeds/n02096437-dandie-dinmont/4.jpg",
+        "/static/breeds/n02096437-dandie-dinmont/5.jpg",
+        "/static/breeds/n02096437-dandie-dinmont/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02096585-boston-bull",
+      "label": "boston-bull",
+      "name": "Boston Bull",
+       "description": "Pequeño perro estadounidense, elegante y compactado, conocido como ‘el caballero americano’. Amigable, inteligente y muy sociable, se adapta perfectamente a la vida en interiores.",
+  "temperament": "Amigable, inteligente, dulce, sociable.",
+  "origin": "Estados Unidos",
+  "size": "Pequeño",
+  "life_span": "11-13 años",
+      "images": [
+        "/static/breeds/n02096585-boston-bull/1.jpg",
+        "/static/breeds/n02096585-boston-bull/2.jpg",
+        "/static/breeds/n02096585-boston-bull/3.jpg",
+        "/static/breeds/n02096585-boston-bull/4.jpg",
+        "/static/breeds/n02096585-boston-bull/5.jpg",
+        "/static/breeds/n02096585-boston-bull/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02097047-miniature-schnauzer",
+      "label": "miniature-schnauzer",
+      "name": "Miniature Schnauzer",
+      "description": "Versión pequeña del schnauzer estándar, criado en Alemania. De barba distintiva y personalidad alerta, es un excelente perro familiar. Es obediente, juguetón y siempre vigilante.",
+  "temperament": "Alerta, cariñoso, inteligente, activo.",
+  "origin": "Alemania",
+  "size": "Pequeño",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02097047-miniature-schnauzer/1.jpg",
+        "/static/breeds/n02097047-miniature-schnauzer/2.jpg",
+        "/static/breeds/n02097047-miniature-schnauzer/3.jpg",
+        "/static/breeds/n02097047-miniature-schnauzer/4.jpg",
+        "/static/breeds/n02097047-miniature-schnauzer/5.jpg",
+        "/static/breeds/n02097047-miniature-schnauzer/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02097130-giant-schnauzer",
+      "label": "giant-schnauzer",
+      "name": "Giant Schnauzer",
+      "description": "Raza alemana grande y poderosa, utilizada como perro de trabajo. Es muy inteligente, protector y leal, ideal para guardia y actividades deportivas. Necesita ejercicio y entrenamiento constante.",
+  "temperament": "Protector, inteligente, fuerte, serio.",
+  "origin": "Alemania",
+  "size": "Grande",
+  "life_span": "10-12 años",
+      "images": [
+        "/static/breeds/n02097130-giant-schnauzer/1.jpg",
+        "/static/breeds/n02097130-giant-schnauzer/2.jpg",
+        "/static/breeds/n02097130-giant-schnauzer/3.jpg",
+        "/static/breeds/n02097130-giant-schnauzer/4.jpg",
+        "/static/breeds/n02097130-giant-schnauzer/5.jpg",
+        "/static/breeds/n02097130-giant-schnauzer/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02097209-standard-schnauzer",
+      "label": "standard-schnauzer",
+      "name": "Standard Schnauzer",
+       "description": "El schnauzer original, de tamaño mediano. Equilibrado, obediente y con gran energía. Es muy fiel y protector, con fuertes instintos de vigilancia.",
+  "temperament": "Obediente, activo, vigilante, leal.",
+  "origin": "Alemania",
+  "size": "Mediano",
+  "life_span": "13-16 años",
+      "images": [
+        "/static/breeds/n02097209-standard-schnauzer/1.jpg",
+        "/static/breeds/n02097209-standard-schnauzer/2.jpg",
+        "/static/breeds/n02097209-standard-schnauzer/3.jpg",
+        "/static/breeds/n02097209-standard-schnauzer/4.jpg",
+        "/static/breeds/n02097209-standard-schnauzer/5.jpg",
+        "/static/breeds/n02097209-standard-schnauzer/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02097298-scotch-terrier",
+      "label": "scotch-terrier",
+      "name": "Scotch Terrier",
+      "description": "Pequeño y robusto terrier escocés, muy reconocido por su silueta característica. Es serio, valiente y muy leal. Tiene una fuerte personalidad y gran instinto protector.",
+  "temperament": "Valiente, independiente, leal, reservado.",
+  "origin": "Escocia",
+  "size": "Pequeño",
+  "life_span": "11-13 años",
+      "images": [
+        "/static/breeds/n02097298-scotch-terrier/1.jpg",
+        "/static/breeds/n02097298-scotch-terrier/2.jpg",
+        "/static/breeds/n02097298-scotch-terrier/3.jpg",
+        "/static/breeds/n02097298-scotch-terrier/4.jpg",
+        "/static/breeds/n02097298-scotch-terrier/5.jpg",
+        "/static/breeds/n02097298-scotch-terrier/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02097474-tibetan-terrier",
+      "label": "tibetan-terrier",
+      "name": "Tibetan Terrier",
+      "description": "Raza tibetana de pelaje largo, criada tradicionalmente como perro sagrado en monasterios. De tamaño mediano, equilibrado y muy cariñoso. Sociable y adaptable a la vida en familia.",
+  "temperament": "Cariñoso, equilibrado, sociable, amable.",
+  "origin": "Tíbet",
+  "size": "Mediano",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02097474-tibetan-terrier/1.jpg",
+        "/static/breeds/n02097474-tibetan-terrier/2.jpg",
+        "/static/breeds/n02097474-tibetan-terrier/3.jpg",
+        "/static/breeds/n02097474-tibetan-terrier/4.jpg",
+        "/static/breeds/n02097474-tibetan-terrier/5.jpg",
+        "/static/breeds/n02097474-tibetan-terrier/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02097658-silky-terrier",
+      "label": "silky-terrier",
+      "name": "Silky Terrier",
+       "description": "Pequeño terrier australiano, descendiente del Yorkshire. Posee un pelaje largo y sedoso, y una personalidad vivaz y curiosa. Es muy inteligente, activo y amante de la compañía humana.",
+  "temperament": "Vivaz, curioso, afectuoso, inteligente.",
+  "origin": "Australia",
+  "size": "Pequeño",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02097658-silky-terrier/1.jpg",
+        "/static/breeds/n02097658-silky-terrier/2.jpg",
+        "/static/breeds/n02097658-silky-terrier/3.jpg",
+        "/static/breeds/n02097658-silky-terrier/4.jpg",
+        "/static/breeds/n02097658-silky-terrier/5.jpg",
+        "/static/breeds/n02097658-silky-terrier/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02098105-soft-coated-wheaten-terrier",
+      "label": "soft-coated-wheaten-terrier",
+       "description": "Terrier irlandés de pelaje suave color trigo. Es un perro alegre, sociable y muy apegado a su familia. Aunque amable, conserva el espíritu activo y fuerte de los terriers.",
+  "temperament": "Afectuoso, alegre, enérgico, sociable.",
+  "origin": "Irlanda",
+  "size": "Mediano",
+  "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02098105-soft-coated-wheaten-terrier/1.jpg",
+        "/static/breeds/n02098105-soft-coated-wheaten-terrier/2.jpg",
+        "/static/breeds/n02098105-soft-coated-wheaten-terrier/3.jpg",
+        "/static/breeds/n02098105-soft-coated-wheaten-terrier/4.jpg",
+        "/static/breeds/n02098105-soft-coated-wheaten-terrier/5.jpg",
+        "/static/breeds/n02098105-soft-coated-wheaten-terrier/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02098286-west-highland-white-terrier",
+      "label": "west-highland-white-terrier",
+      "name": "West Highland White Terrier",
+       "description": "Pequeño terrier escocés de pelaje blanco. Es enérgico, confiado y decidido, conocido por su personalidad divertida y amigable. Excelente compañero tanto en familia como en espacios reducidos.",
+  "temperament": "Sociable, valiente, alegre, activo.",
+  "origin": "Escocia",
+  "size": "Pequeño",
+  "life_span": "12-16 años",
+      "images": [
+        "/static/breeds/n02098286-west-highland-white-terrier/1.jpg",
+        "/static/breeds/n02098286-west-highland-white-terrier/2.jpg",
+        "/static/breeds/n02098286-west-highland-white-terrier/3.jpg",
+        "/static/breeds/n02098286-west-highland-white-terrier/4.jpg",
+        "/static/breeds/n02098286-west-highland-white-terrier/5.jpg",
+        "/static/breeds/n02098286-west-highland-white-terrier/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02098413-lhasa",
+      "label": "lhasa",
+      "name": "Lhasa",
+     "description": "Perro sagrado del Tíbet utilizado en templos. Su pelaje largo y su mirada intensa lo hacen muy distintivo. Es independiente, leal y muy protector de su hogar.",
+  "temperament": "Independiente, leal, alerta, reservado.",
+  "origin": "Tíbet",
+  "size": "Pequeño",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02098413-lhasa/1.jpg",
+        "/static/breeds/n02098413-lhasa/2.jpg",
+        "/static/breeds/n02098413-lhasa/3.jpg",
+        "/static/breeds/n02098413-lhasa/4.jpg",
+        "/static/breeds/n02098413-lhasa/5.jpg",
+        "/static/breeds/n02098413-lhasa/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02099267-flat-coated-retriever",
+      "label": "flat-coated-retriever",
+      "name": "Flat Coated Retriever",
+       "description": "Perro cobrador inglés, conocido por su pelaje brillante y su personalidad siempre alegre. Es muy sociable, activo y amante del agua. Ideal para familias que disfrutan de actividades al aire libre.",
+  "temperament": "Alegre, sociable, inteligente, enérgico.",
+  "origin": "Inglaterra",
+  "size": "Grande",
+  "life_span": "8-14 años",
+      "images": [
+        "/static/breeds/n02099267-flat-coated-retriever/1.jpg",
+        "/static/breeds/n02099267-flat-coated-retriever/2.jpg",
+        "/static/breeds/n02099267-flat-coated-retriever/3.jpg",
+        "/static/breeds/n02099267-flat-coated-retriever/4.jpg",
+        "/static/breeds/n02099267-flat-coated-retriever/5.jpg",
+        "/static/breeds/n02099267-flat-coated-retriever/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02099429-curly-coated-retriever",
+      "label": "curly-coated-retriever",
+      "name": "Curly Coated Retriever",
+      "description": "El más antiguo de los retrievers, reconocido por su pelaje rizado e impermeable. Es fuerte, resistente y muy inteligente. Excelente nadador y excelente perro de trabajo.",
+  "temperament": "Valiente, inteligente, reservado, atlético.",
+  "origin": "Inglaterra",
+  "size": "Grande",
+  "life_span": "10-12 años",
+      "images": [
+        "/static/breeds/n02099429-curly-coated-retriever/1.jpg",
+        "/static/breeds/n02099429-curly-coated-retriever/2.jpg",
+        "/static/breeds/n02099429-curly-coated-retriever/3.jpg",
+        "/static/breeds/n02099429-curly-coated-retriever/4.jpg",
+        "/static/breeds/n02099429-curly-coated-retriever/5.jpg",
+        "/static/breeds/n02099429-curly-coated-retriever/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02099601-golden-retriever",
+      "label": "golden-retriever",
+      "name": "Golden Retriever",
+      "description": "Raza escocesa extremadamente popular por su carácter dulce, sociable y equilibrado. Inteligente, fácil de entrenar y perfecto para familias. Amante del agua y del juego.",
+  "temperament": "Afectuoso, amable, inteligente, sociable.",
+  "origin": "Escocia",
+  "size": "Grande",
+  "life_span": "10-12 años",
+      "images": [
+        "/static/breeds/n02099601-golden-retriever/1.jpg",
+        "/static/breeds/n02099601-golden-retriever/2.jpg",
+        "/static/breeds/n02099601-golden-retriever/3.jpg",
+        "/static/breeds/n02099601-golden-retriever/4.jpg",
+        "/static/breeds/n02099601-golden-retriever/5.jpg",
+        "/static/breeds/n02099601-golden-retriever/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02099712-labrador-retriever",
+      "label": "labrador-retriever",
+      "name": "Labrador Retriever",
+     "description": "Originario de Terranova, es uno de los perros más versátiles y queridos del mundo. De carácter noble, inteligente y muy sociable. Excelente como perro de servicio, familia y actividades acuáticas.",
+  "temperament": "Dulce, sociable, inteligente, equilibrado.",
+  "origin": "Canadá",
+  "size": "Grande",
+  "life_span": "11-13 años",
+      "images": [
+        "/static/breeds/n02099712-labrador-retriever/1.jpg",
+        "/static/breeds/n02099712-labrador-retriever/2.jpg",
+        "/static/breeds/n02099712-labrador-retriever/3.jpg",
+        "/static/breeds/n02099712-labrador-retriever/4.jpg",
+        "/static/breeds/n02099712-labrador-retriever/5.jpg",
+        "/static/breeds/n02099712-labrador-retriever/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02099849-chesapeake-bay-retriever",
+      "label": "chesapeake-bay-retriever",
+      "name": "Chesapeake Bay Retriever",
+       "description": "Raza estadounidense especializada en caza acuática. Robusto, resistente al frío y muy leal. Tiene un fuerte instinto protector y destaca por su tenacidad en el agua.",
+  "temperament": "Protector, decidido, leal, fuerte.",
+  "origin": "Estados Unidos",
+  "size": "Grande",
+  "life_span": "10-13 años",
+      "images": [
+        "/static/breeds/n02099849-chesapeake-bay-retriever/1.jpg",
+        "/static/breeds/n02099849-chesapeake-bay-retriever/2.jpg",
+        "/static/breeds/n02099849-chesapeake-bay-retriever/3.jpg",
+        "/static/breeds/n02099849-chesapeake-bay-retriever/4.jpg",
+        "/static/breeds/n02099849-chesapeake-bay-retriever/5.jpg",
+        "/static/breeds/n02099849-chesapeake-bay-retriever/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02100236-german-short-haired-pointer",
+      "label": "german-short-haired-pointer",
+      "name": "German Short Haired Pointer",
+      "description": "Braco alemán versátil para caza terrestre y acuática. Es atlético, inteligente y muy devoto a su dueño. Necesita ejercicio intenso, entrenamiento y mucha actividad mental.",
+  "temperament": "Enérgico, inteligente, obediente, leal.",
+  "origin": "Alemania",
+  "size": "Grande",
+  "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02100236-german-short-haired-pointer/1.jpg",
+        "/static/breeds/n02100236-german-short-haired-pointer/2.jpg",
+        "/static/breeds/n02100236-german-short-haired-pointer/3.jpg",
+        "/static/breeds/n02100236-german-short-haired-pointer/4.jpg",
+        "/static/breeds/n02100236-german-short-haired-pointer/5.jpg",
+        "/static/breeds/n02100236-german-short-haired-pointer/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02100583-vizsla",
+      "label": "vizsla",
+      "name": "Vizsla",
+       "description": "Raza húngara de caza, famosa por su pelaje color oro y su fuerte vínculo con el dueño. Es muy afectuoso, activo y sensible. Necesita ejercicio constante y compañía, ya que no tolera estar solo por mucho tiempo.",
+  "temperament": "Leal, cariñoso, sensible, enérgico.",
+  "origin": "Hungría",
+  "size": "Mediano-Grande",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02100583-vizsla/1.jpg",
+        "/static/breeds/n02100583-vizsla/2.jpg",
+        "/static/breeds/n02100583-vizsla/3.jpg",
+        "/static/breeds/n02100583-vizsla/4.jpg",
+        "/static/breeds/n02100583-vizsla/5.jpg",
+        "/static/breeds/n02100583-vizsla/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02100735-english-setter",
+      "label": "english-setter",
+      "name": "English Setter",
+       "description": "Perro elegante británico, conocido por su pelaje moteado y su carácter sociable. Es activo, dulce y adaptable, ideal para familias. Necesita ejercicio diario y actividades que estimulen su mente.",
+  "temperament": "Afectuoso, sociable, activo, gentil.",
+  "origin": "Inglaterra",
+  "size": "Grande",
+  "life_span": "10-12 años",
+      "images": [
+        "/static/breeds/n02100735-english-setter/1.jpg",
+        "/static/breeds/n02100735-english-setter/2.jpg",
+        "/static/breeds/n02100735-english-setter/3.jpg",
+        "/static/breeds/n02100735-english-setter/4.jpg",
+        "/static/breeds/n02100735-english-setter/5.jpg",
+        "/static/breeds/n02100735-english-setter/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02100877-irish-setter",
+      "label": "irish-setter",
+      "name": "Irish Setter",
+       "description": "Conocido por su hermoso pelaje rojo caoba, es un perro irlandés alegre y lleno de energía. Muy sociable y cariñoso, excelente con niños. Ideal para personas activas que disfruten de paseos largos.",
+  "temperament": "Alegre, sociable, enérgico, amigable.",
+  "origin": "Irlanda",
+  "size": "Grande",
+  "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02100877-irish-setter/1.jpg",
+        "/static/breeds/n02100877-irish-setter/2.jpg",
+        "/static/breeds/n02100877-irish-setter/3.jpg",
+        "/static/breeds/n02100877-irish-setter/4.jpg",
+        "/static/breeds/n02100877-irish-setter/5.jpg",
+        "/static/breeds/n02100877-irish-setter/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02101006-gordon-setter",
+      "label": "gordon-setter",
+      "name": "Gordon Setter",
+       "description": "Raza escocesa robusta con pelaje negro y fuego. Es leal, protector y muy trabajador. Necesita actividad física y compañía frecuente, desarrollando fuertes vínculos con su familia.",
+  "temperament": "Leal, trabajador, protector, inteligente.",
+  "origin": "Escocia",
+  "size": "Grande",
+  "life_span": "10-12 años",
+      "images": [
+        "/static/breeds/n02101006-gordon-setter/1.jpg",
+        "/static/breeds/n02101006-gordon-setter/2.jpg",
+        "/static/breeds/n02101006-gordon-setter/3.jpg",
+        "/static/breeds/n02101006-gordon-setter/4.jpg",
+        "/static/breeds/n02101006-gordon-setter/5.jpg",
+        "/static/breeds/n02101006-gordon-setter/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02101388-brittany-spaniel",
+      "label": "brittany-spaniel",
+      "name": "Brittany Spaniel",
+      "description": "Raza francesa muy versátil utilizada para caza. Es energética, inteligente y muy amistosa. Su tamaño compacto y su carácter equilibrado lo hacen excelente perro familiar.",
+  "temperament": "Activo, sociable, inteligente, alerta.",
+  "origin": "Francia",
+  "size": "Mediano",
+  "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02101388-brittany-spaniel/1.jpg",
+        "/static/breeds/n02101388-brittany-spaniel/2.jpg",
+        "/static/breeds/n02101388-brittany-spaniel/3.jpg",
+        "/static/breeds/n02101388-brittany-spaniel/4.jpg",
+        "/static/breeds/n02101388-brittany-spaniel/5.jpg",
+        "/static/breeds/n02101388-brittany-spaniel/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02101556-clumber",
+      "label": "clumber",
+      "name": "Clumber",
+     "description": "El más grande de los spaniels británicos, con cuerpo robusto y pelaje blanco. Es calmado, gentil y muy afectuoso. Buen compañero de casa y amante de los paseos tranquilos.",
+  "temperament": "Gentil, calmado, leal, tranquilo.",
+  "origin": "Inglaterra",
+  "size": "Grande",
+  "life_span": "10-12 años",
+      "images": [
+        "/static/breeds/n02101556-clumber/1.jpg",
+        "/static/breeds/n02101556-clumber/2.jpg",
+        "/static/breeds/n02101556-clumber/3.jpg",
+        "/static/breeds/n02101556-clumber/4.jpg",
+        "/static/breeds/n02101556-clumber/5.jpg",
+        "/static/breeds/n02101556-clumber/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02102040-english-springer",
+      "label": "english-springer",
+      "name": "English Springer",
+       "description": "Raza inglesa activa y amigable, ideal para familias. Destaca por su energía, inteligencia y disposición para trabajar. Es muy sociable y necesita ejercicio diario.",
+  "temperament": "Alegre, inteligente, sociable, dinámico.",
+  "origin": "Inglaterra",
+  "size": "Mediano",
+  "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02102040-english-springer/1.jpg",
+        "/static/breeds/n02102040-english-springer/2.jpg",
+        "/static/breeds/n02102040-english-springer/3.jpg",
+        "/static/breeds/n02102040-english-springer/4.jpg",
+        "/static/breeds/n02102040-english-springer/5.jpg",
+        "/static/breeds/n02102040-english-springer/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02102177-welsh-springer-spaniel",
+      "label": "welsh-springer-spaniel",
+      "name": "Welsh Springer Spaniel",
+     "description": "Raza originaria de Gales, con hermoso pelaje rojo y blanco. Es leal, cariñoso y muy trabajador. Más reservado que otros spaniels, pero profundamente devoto a su familia.",
+  "temperament": "Leal, afectuoso, trabajador, reservado.",
+  "origin": "Gales",
+  "size": "Mediano",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02102177-welsh-springer-spaniel/1.jpg",
+        "/static/breeds/n02102177-welsh-springer-spaniel/2.jpg",
+        "/static/breeds/n02102177-welsh-springer-spaniel/3.jpg",
+        "/static/breeds/n02102177-welsh-springer-spaniel/4.jpg",
+        "/static/breeds/n02102177-welsh-springer-spaniel/5.jpg",
+        "/static/breeds/n02102177-welsh-springer-spaniel/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02102318-cocker-spaniel",
+      "label": "cocker-spaniel",
+      "name": "Cocker Spaniel",
+       "description": "Pequeño spaniel inglés conocido por su carácter dulce y sus largas orejas. Es alegre, cariñoso y muy juguetón. Excelente perro familiar, con mucha energía para jugar.",
+  "temperament": "Cariñoso, alegre, sensible, activo.",
+  "origin": "Inglaterra",
+  "size": "Pequeño-Mediano",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02102318-cocker-spaniel/1.jpg",
+        "/static/breeds/n02102318-cocker-spaniel/2.jpg",
+        "/static/breeds/n02102318-cocker-spaniel/3.jpg",
+        "/static/breeds/n02102318-cocker-spaniel/4.jpg",
+        "/static/breeds/n02102318-cocker-spaniel/5.jpg",
+        "/static/breeds/n02102318-cocker-spaniel/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02102480-sussex-spaniel",
+      "label": "sussex-spaniel",
+      "name": "Sussex Spaniel",
+       "description": "Spaniel inglés de cuerpo robusto y color dorado oscuro. Es más calmado que otros spaniels, con un carácter dulce y estable. Muy leal y paciente, perfecto para familias tranquilas.",
+  "temperament": "Dócil, paciente, estable, cariñoso.",
+  "origin": "Inglaterra",
+  "size": "Mediano",
+  "life_span": "11-13 años",
+      "images": [
+        "/static/breeds/n02102480-sussex-spaniel/1.jpg",
+        "/static/breeds/n02102480-sussex-spaniel/2.jpg",
+        "/static/breeds/n02102480-sussex-spaniel/3.jpg",
+        "/static/breeds/n02102480-sussex-spaniel/4.jpg",
+        "/static/breeds/n02102480-sussex-spaniel/5.jpg",
+        "/static/breeds/n02102480-sussex-spaniel/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02102973-irish-water-spaniel",
+      "label": "irish-water-spaniel",
+      "name": "Irish Water Spaniel",
+      "description": "Spaniel irlandés de pelaje rizado e impermeable, criado para trabajos acuáticos. Es un nadador excepcional, muy inteligente y curioso. Combina energía con buen sentido del humor y un fuerte apego hacia su familia.",
+  "temperament": "Curioso, inteligente, energético, leal.",
+  "origin": "Irlanda",
+  "size": "Grande",
+  "life_span": "10-12 años",
+      "images": [
+        "/static/breeds/n02102973-irish-water-spaniel/1.jpg",
+        "/static/breeds/n02102973-irish-water-spaniel/2.jpg",
+        "/static/breeds/n02102973-irish-water-spaniel/3.jpg",
+        "/static/breeds/n02102973-irish-water-spaniel/4.jpg",
+        "/static/breeds/n02102973-irish-water-spaniel/5.jpg",
+        "/static/breeds/n02102973-irish-water-spaniel/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02104029-kuvasz",
+      "label": "kuvasz",
+      "name": "Kuvasz",
+      "description": "Majestuoso perro húngaro criado como guardián de ganado. Es grande, valiente y extremadamente leal. Tiene un fuerte instinto protector y requiere una familia experimentada y activa.",
+  "temperament": "Protector, noble, valiente, independiente.",
+  "origin": "Hungría",
+  "size": "Grande",
+  "life_span": "10-12 años",
+      "images": [
+        "/static/breeds/n02104029-kuvasz/1.jpg",
+        "/static/breeds/n02104029-kuvasz/2.jpg",
+        "/static/breeds/n02104029-kuvasz/3.jpg",
+        "/static/breeds/n02104029-kuvasz/4.jpg",
+        "/static/breeds/n02104029-kuvasz/5.jpg",
+        "/static/breeds/n02104029-kuvasz/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02104365-schipperke",
+      "label": "schipperke",
+      "name": "Schipperke",
+       "description": "Pequeño perro belga conocido como el ‘pequeño diablo negro’ por su energía y vivacidad. Es curioso, valiente y excelente vigilante. Perfecto para personas activas que disfrutan perros inteligentes y traviesos.",
+  "temperament": "Alerta, curioso, enérgico, independiente.",
+  "origin": "Bélgica",
+  "size": "Pequeño",
+  "life_span": "13-15 años",
+      "images": [
+        "/static/breeds/n02104365-schipperke/1.jpg",
+        "/static/breeds/n02104365-schipperke/2.jpg",
+        "/static/breeds/n02104365-schipperke/3.jpg",
+        "/static/breeds/n02104365-schipperke/4.jpg",
+        "/static/breeds/n02104365-schipperke/5.jpg",
+        "/static/breeds/n02104365-schipperke/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02105056-groenendael",
+      "label": "groenendael",
+      "name": "Groenendael",
+      "description": "Variedad del Pastor Belga, reconocible por su elegante pelaje negro. Inteligente, obediente y muy protector. Ideal para trabajos de seguridad, deportes caninos y familias activas.",
+  "temperament": "Inteligente, leal, protector, trabajador.",
+  "origin": "Bélgica",
+  "size": "Grande",
+  "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02105056-groenendael/1.jpg",
+        "/static/breeds/n02105056-groenendael/2.jpg",
+        "/static/breeds/n02105056-groenendael/3.jpg",
+        "/static/breeds/n02105056-groenendael/4.jpg",
+        "/static/breeds/n02105056-groenendael/5.jpg",
+        "/static/breeds/n02105056-groenendael/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02105162-malinois",
+      "label": "malinois",
+      "name": "Malinois",
+      "description": "Variedad del Pastor Belga utilizada por fuerzas policiales y militares. Es extremadamente ágil, inteligente y energético. Necesita entrenamiento constante y un dueño experimentado.",
+  "temperament": "Vigilante, enérgico, obediente, seguro.",
+  "origin": "Bélgica",
+  "size": "Grande",
+  "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02105162-malinois/1.jpg",
+        "/static/breeds/n02105162-malinois/2.jpg",
+        "/static/breeds/n02105162-malinois/3.jpg",
+        "/static/breeds/n02105162-malinois/4.jpg",
+        "/static/breeds/n02105162-malinois/5.jpg",
+        "/static/breeds/n02105162-malinois/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02105251-briard",
+      "label": "briard",
+      "name": "Briard",
+       "description": "Pastor francés de pelaje largo y carácter noble. Muy protector y leal, excelente perro de trabajo y guardián. Forma vínculos fuertes con su familia y requiere ejercicio diario.",
+  "temperament": "Leal, valiente, afectuoso, protector.",
+  "origin": "Francia",
+  "size": "Grande",
+  "life_span": "10-12 años",
+      "images": [
+        "/static/breeds/n02105251-briard/1.jpg",
+        "/static/breeds/n02105251-briard/2.jpg",
+        "/static/breeds/n02105251-briard/3.jpg",
+        "/static/breeds/n02105251-briard/4.jpg",
+        "/static/breeds/n02105251-briard/5.jpg",
+        "/static/breeds/n02105251-briard/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02105412-kelpie",
+      "description": "Pastor australiano incansable, conocido por su agilidad y resistencia. Ideal para trabajos de campo y deportes caninos. Necesita actividad constante y desafíos mentales para mantenerse equilibrado.",
+  "temperament": "Activo, inteligente, decidido, alerta.",
+  "origin": "Australia",
+  "size": "Mediano",
+  "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02105412-kelpie/1.jpg",
+        "/static/breeds/n02105412-kelpie/2.jpg",
+        "/static/breeds/n02105412-kelpie/3.jpg",
+        "/static/breeds/n02105412-kelpie/4.jpg",
+        "/static/breeds/n02105412-kelpie/5.jpg",
+        "/static/breeds/n02105412-kelpie/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02105505-komondor",
+      "label": "komondor",
+      "name": "Komondor",
+     "description": "Perro húngaro de gran tamaño, famoso por su pelaje en forma de ‘dreadlocks’. Criado como guardián de ganado, es muy protector e independiente. Imponente y fiel a su familia.",
+  "temperament": "Protector, serio, independiente, leal.",
+  "origin": "Hungría",
+  "size": "Gigante",
+  "life_span": "10-12 años",
+      "images": [
+        "/static/breeds/n02105505-komondor/1.jpg",
+        "/static/breeds/n02105505-komondor/2.jpg",
+        "/static/breeds/n02105505-komondor/3.jpg",
+        "/static/breeds/n02105505-komondor/4.jpg",
+        "/static/breeds/n02105505-komondor/5.jpg",
+        "/static/breeds/n02105505-komondor/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02105641-old-english-sheepdog",
+      "label": "old-english-sheepdog",
+      "name": "Old English Sheepdog",
+       "description": "Pastor inglés de pelaje abundante y carácter dulce. A pesar de su tamaño, es muy amable y sociable, perfecto para familias. Tiene un carácter juguetón y necesita cepillado constante.",
+  "temperament": "Amable, juguetón, sociable, protector.",
+  "origin": "Inglaterra",
+  "size": "Grande",
+  "life_span": "10-12 años",
+      "images": [
+        "/static/breeds/n02105641-old-english-sheepdog/1.jpg",
+        "/static/breeds/n02105641-old-english-sheepdog/2.jpg",
+        "/static/breeds/n02105641-old-english-sheepdog/3.jpg",
+        "/static/breeds/n02105641-old-english-sheepdog/4.jpg",
+        "/static/breeds/n02105641-old-english-sheepdog/5.jpg",
+        "/static/breeds/n02105641-old-english-sheepdog/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02105855-shetland-sheepdog",
+      "label": "shetland-sheepdog",
+      "name": "Shetland Sheepdog",
+       "description": "Pequeña raza de pastoreo originaria de las islas Shetland. Muy inteligente, obediente y sensible, ideal para deportes caninos. Fiel y cariñoso, suele apegarse mucho a su familia.",
+  "temperament": "Inteligente, cariñoso, sensible, leal.",
+  "origin": "Escocia",
+  "size": "Pequeño-Mediano",
+  "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02105855-shetland-sheepdog/1.jpg",
+        "/static/breeds/n02105855-shetland-sheepdog/2.jpg",
+        "/static/breeds/n02105855-shetland-sheepdog/3.jpg",
+        "/static/breeds/n02105855-shetland-sheepdog/4.jpg",
+        "/static/breeds/n02105855-shetland-sheepdog/5.jpg",
+        "/static/breeds/n02105855-shetland-sheepdog/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02106030-collie",
+      "label": "collie",
+      "name": "Collie",
+      "description": "Pastor escocés de gran elegancia, famoso por su inteligencia y sensibilidad. Es un perro muy leal, dulce con los niños y excelente compañero familiar. Requiere ejercicio moderado y mucha interacción humana.",
+  "temperament": "Dócil, leal, sensible, obediente.",
+  "origin": "Escocia",
+  "size": "Grande",
+  "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02106030-collie/1.jpg",
+        "/static/breeds/n02106030-collie/2.jpg",
+        "/static/breeds/n02106030-collie/3.jpg",
+        "/static/breeds/n02106030-collie/4.jpg",
+        "/static/breeds/n02106030-collie/5.jpg",
+        "/static/breeds/n02106030-collie/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02106166-border-collie",
+      "label": "border-collie",
+      "name": "Border Collie",
+       "description": "Considerado el perro más inteligente del mundo. Raza escocesa de pastoreo, increíblemente activa y enfocada. Necesita trabajo, ejercicio mental y físico diario, y dueños experimentados.",
+  "temperament": "Inteligente, energético, obediente, enfocado.",
+  "origin": "Reino Unido",
+  "size": "Mediano",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02106166-border-collie/1.jpg",
+        "/static/breeds/n02106166-border-collie/2.jpg",
+        "/static/breeds/n02106166-border-collie/3.jpg",
+        "/static/breeds/n02106166-border-collie/4.jpg",
+        "/static/breeds/n02106166-border-collie/5.jpg",
+        "/static/breeds/n02106166-border-collie/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02106382-bouvier-des-flandres",
+      "label": "bouvier-des-flandres",
+      "name": "Bouvier Des Flandres",
+     "description": "Pastor belga de gran tamaño, fuerte y con pelaje áspero. Es valiente, protector y muy trabajador. Excelente guardián y compañero leal, siempre dispuesto a colaborar con su familia.",
+  "temperament": "Protector, valiente, serio, leal.",
+  "origin": "Bélgica",
+  "size": "Grande",
+  "life_span": "10-12 años",
+      "images": [
+        "/static/breeds/n02106382-bouvier-des-flandres/1.jpg",
+        "/static/breeds/n02106382-bouvier-des-flandres/2.jpg",
+        "/static/breeds/n02106382-bouvier-des-flandres/3.jpg",
+        "/static/breeds/n02106382-bouvier-des-flandres/4.jpg",
+        "/static/breeds/n02106382-bouvier-des-flandres/5.jpg",
+        "/static/breeds/n02106382-bouvier-des-flandres/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02106550-rottweiler",
+      "label": "rottweiler",
+      "name": "Rottweiler",
+      "description": "Raza alemana poderosa, originalmente utilizada para arrear ganado. Fuerte, seguro y protector, pero muy afectuoso con su familia. Requiere socialización y entrenamiento responsable.",
+  "temperament": "Seguro, protector, leal, fuerte.",
+  "origin": "Alemania",
+  "size": "Grande",
+  "life_span": "9-11 años",
+      "images": [
+        "/static/breeds/n02106550-rottweiler/1.jpg",
+        "/static/breeds/n02106550-rottweiler/2.jpg",
+        "/static/breeds/n02106550-rottweiler/3.jpg",
+        "/static/breeds/n02106550-rottweiler/4.jpg",
+        "/static/breeds/n02106550-rottweiler/5.jpg",
+        "/static/breeds/n02106550-rottweiler/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02106662-german-shepherd",
+      "label": "german-shepherd",
+      "name": "German Shepherd",
+       "description": "El Pastor Alemán es uno de los perros más versátiles del mundo. Inteligente, valiente y obediente, destaca en labores policiales, rescate y como compañero familiar. Es muy leal y protector.",
+  "temperament": "Leal, inteligente, valiente, obediente.",
+  "origin": "Alemania",
+  "size": "Grande",
+  "life_span": "9-13 años",
+      "images": [
+        "/static/breeds/n02106662-german-shepherd/1.jpg",
+        "/static/breeds/n02106662-german-shepherd/2.jpg",
+        "/static/breeds/n02106662-german-shepherd/3.jpg",
+        "/static/breeds/n02106662-german-shepherd/4.jpg",
+        "/static/breeds/n02106662-german-shepherd/5.jpg",
+        "/static/breeds/n02106662-german-shepherd/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02107142-doberman",
+      "label": "doberman",
+      "name": "Doberman",
+       "description": "Raza alemana elegante y atlética, tradicionalmente utilizada como perro de guardia. Es extremadamente inteligente, alerta y leal. Con buen entrenamiento, es cariñoso y equilibrado.",
+  "temperament": "Alerta, leal, valiente, enérgico.",
+  "origin": "Alemania",
+  "size": "Grande",
+  "life_span": "10-13 años",
+      "images": [
+        "/static/breeds/n02107142-doberman/1.jpg",
+        "/static/breeds/n02107142-doberman/2.jpg",
+        "/static/breeds/n02107142-doberman/3.jpg",
+        "/static/breeds/n02107142-doberman/4.jpg",
+        "/static/breeds/n02107142-doberman/5.jpg",
+        "/static/breeds/n02107142-doberman/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02107312-miniature-pinscher",
+      "label": "miniature-pinscher",
+      "name": "Miniature Pinscher",
+      "description": "Pequeño perro alemán lleno de energía y mucha actitud. Valiente, curioso y muy activo, se le conoce como el ‘rey de los juguetes’. Necesita actividad y límites claros.",
+  "temperament": "Enérgico, valiente, curioso, vivaz.",
+  "origin": "Alemania",
+  "size": "Pequeño",
+  "life_span": "12-16 años",
+      "images": [
+        "/static/breeds/n02107312-miniature-pinscher/1.jpg",
+        "/static/breeds/n02107312-miniature-pinscher/2.jpg",
+        "/static/breeds/n02107312-miniature-pinscher/3.jpg",
+        "/static/breeds/n02107312-miniature-pinscher/4.jpg",
+        "/static/breeds/n02107312-miniature-pinscher/5.jpg",
+        "/static/breeds/n02107312-miniature-pinscher/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02107574-greater-swiss-mountain-dog",
+      "label": "greater-swiss-mountain-dog",
+      "name": "Greater Swiss Mountain Dog",
+      "description": "El mayor de los boyeros suizos. De gran tamaño y fuerza, pero con temperamento amable y equilibrado. Excelente perro familiar y guardián, requiere espacio y ejercicio controlado.",
+  "temperament": "Amable, estable, leal, protector.",
+  "origin": "Suiza",
+  "size": "Grande",
+  "life_span": "8-11 años",
+      "images": [
+        "/static/breeds/n02107574-greater-swiss-mountain-dog/1.jpg",
+        "/static/breeds/n02107574-greater-swiss-mountain-dog/2.jpg",
+        "/static/breeds/n02107574-greater-swiss-mountain-dog/3.jpg",
+        "/static/breeds/n02107574-greater-swiss-mountain-dog/4.jpg",
+        "/static/breeds/n02107574-greater-swiss-mountain-dog/5.jpg",
+        "/static/breeds/n02107574-greater-swiss-mountain-dog/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02107683-bernese-mountain-dog",
+      "label": "bernese-mountain-dog",
+      "name": "Bernese Mountain Dog",
+      "description": "Boyero suizo tricolor, de carácter dulce y muy afectuoso. Ideal para familias, especialmente con niños. Es fuerte y trabajador, pero sensible y tranquilo en casa.",
+  "temperament": "Cariñoso, noble, paciente, leal.",
+  "origin": "Suiza",
+  "size": "Grande",
+  "life_span": "7-10 años",
+      "images": [
+        "/static/breeds/n02107683-bernese-mountain-dog/1.jpg",
+        "/static/breeds/n02107683-bernese-mountain-dog/2.jpg",
+        "/static/breeds/n02107683-bernese-mountain-dog/3.jpg",
+        "/static/breeds/n02107683-bernese-mountain-dog/4.jpg",
+        "/static/breeds/n02107683-bernese-mountain-dog/5.jpg",
+        "/static/breeds/n02107683-bernese-mountain-dog/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02107908-appenzeller",
+      "label": "appenzeller",
+      "name": "Appenzeller",
+      "description": "Uno de los cuatro boyeros suizos, de tamaño mediano. Ágil, enérgico y muy trabajador. Tiene un fuerte instinto de guardia y necesita actividad intensa y entrenamiento.",
+  "temperament": "Alerta, energético, leal, trabajador.",
+  "origin": "Suiza",
+  "size": "Mediano-Grande",
+  "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02107908-appenzeller/1.jpg",
+        "/static/breeds/n02107908-appenzeller/2.jpg",
+        "/static/breeds/n02107908-appenzeller/3.jpg",
+        "/static/breeds/n02107908-appenzeller/4.jpg",
+        "/static/breeds/n02107908-appenzeller/5.jpg",
+        "/static/breeds/n02107908-appenzeller/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02108000-entlebucher",
+      "label": "entlebucher",
+      "name": "Entlebucher",
+      "description": "El más pequeño de los boyeros suizos, ágil y fuerte pese a su tamaño. Es un perro enérgico, inteligente y muy leal, ideal para familias activas. Tiene un instinto natural para pastorear y proteger.",
+  "temperament": "Activo, alerta, leal, trabajador.",
+  "origin": "Suiza",
+  "size": "Mediano",
+  "life_span": "11-15 años",
+      "images": [
+        "/static/breeds/n02108000-entlebucher/1.jpg",
+        "/static/breeds/n02108000-entlebucher/2.jpg",
+        "/static/breeds/n02108000-entlebucher/3.jpg",
+        "/static/breeds/n02108000-entlebucher/4.jpg",
+        "/static/breeds/n02108000-entlebucher/5.jpg",
+        "/static/breeds/n02108000-entlebucher/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02108089-boxer",
+      "label": "boxer",
+      "name": "Boxer",
+      "description": "Raza alemana musculosa, atlética y llena de energía. Es muy juguetón, cariñoso y devoto a su familia. Excelente con niños y protector por naturaleza. Necesita actividad diaria.",
+  "temperament": "Alegre, protector, leal, enérgico.",
+  "origin": "Alemania",
+  "size": "Mediano-Grande",
+  "life_span": "10-12 años",
+      "images": [
+        "/static/breeds/n02108089-boxer/1.jpg",
+        "/static/breeds/n02108089-boxer/2.jpg",
+        "/static/breeds/n02108089-boxer/3.jpg",
+        "/static/breeds/n02108089-boxer/4.jpg",
+        "/static/breeds/n02108089-boxer/5.jpg",
+        "/static/breeds/n02108089-boxer/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02108422-bull-mastiff",
+      "label": "bull-mastiff",
+      "name": "Bull Mastiff",
+      "description": "Cruce entre bulldog y mastín, creado como perro guardián. De gran tamaño, pero sorprendentemente calmado y paciente. Es valiente, protector y muy leal, aunque requiere socialización temprana.",
+  "temperament": "Protector, tranquilo, leal, fuerte.",
+  "origin": "Inglaterra",
+  "size": "Grande",
+  "life_span": "7-10 años",
+      "images": [
+        "/static/breeds/n02108422-bull-mastiff/1.jpg",
+        "/static/breeds/n02108422-bull-mastiff/2.jpg",
+        "/static/breeds/n02108422-bull-mastiff/3.jpg",
+        "/static/breeds/n02108422-bull-mastiff/4.jpg",
+        "/static/breeds/n02108422-bull-mastiff/5.jpg",
+        "/static/breeds/n02108422-bull-mastiff/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02108551-tibetan-mastiff",
+      "label": "tibetan-mastiff",
+      "name": "Tibetan Mastiff",
+       "description": "Gigante y majestuoso perro del Tíbet, usado para proteger monasterios y ganados. Tiene un instinto protector muy fuerte y un carácter independiente. Es imponente, serio y extremadamente leal.",
+  "temperament": "Independiente, protector, noble, reservado.",
+  "origin": "Tíbet",
+  "size": "Gigante",
+  "life_span": "10-14 años",
+      "images": [
+        "/static/breeds/n02108551-tibetan-mastiff/1.jpg",
+        "/static/breeds/n02108551-tibetan-mastiff/2.jpg",
+        "/static/breeds/n02108551-tibetan-mastiff/3.jpg",
+        "/static/breeds/n02108551-tibetan-mastiff/4.jpg",
+        "/static/breeds/n02108551-tibetan-mastiff/5.jpg",
+        "/static/breeds/n02108551-tibetan-mastiff/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02108915-french-bulldog",
+      "label": "french-bulldog",
+      "name": "French Bulldog",
+       "description": "Raza pequeña francesa, compacta y carismática. Muy sociable, divertida y expresiva, ideal para vida urbana. De energía moderada, le encanta la compañía humana y es fácil de cuidar.",
+  "temperament": "Cariñoso, sociable, juguetón, tranquilo.",
+  "origin": "Francia",
+  "size": "Pequeño",
+  "life_span": "10-12 años",
+      "images": [
+        "/static/breeds/n02108915-french-bulldog/1.jpg",
+        "/static/breeds/n02108915-french-bulldog/2.jpg",
+        "/static/breeds/n02108915-french-bulldog/3.jpg",
+        "/static/breeds/n02108915-french-bulldog/4.jpg",
+        "/static/breeds/n02108915-french-bulldog/5.jpg",
+        "/static/breeds/n02108915-french-bulldog/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02109047-great-dane",
+      "label": "great-dane",
+      "name": "Great Dane",
+       "description": "Uno de los perros más altos del mundo, conocido por su porte majestuoso. A pesar de su tamaño enorme, es gentil, amistoso y muy cariñoso. Necesita espacio y cuidados especiales.",
+  "temperament": "Gentil, amistoso, noble, tranquilo.",
+  "origin": "Alemania",
+  "size": "Gigante",
+  "life_span": "7-10 años",
+      "images": [
+        "/static/breeds/n02109047-great-dane/1.jpg",
+        "/static/breeds/n02109047-great-dane/2.jpg",
+        "/static/breeds/n02109047-great-dane/3.jpg",
+        "/static/breeds/n02109047-great-dane/4.jpg",
+        "/static/breeds/n02109047-great-dane/5.jpg",
+        "/static/breeds/n02109047-great-dane/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02109525-saint-bernard",
+      "label": "saint-bernard",
+      "name": "Saint Bernard",
+      "description": "Perro de los Alpes suizos, famoso por su labor en rescate en nieve. Gigante, dulce y muy protector, con un carácter tranquilo y paciente. Ideal para familias con espacio.",
+  "temperament": "Dulce, tranquilo, protector, paciente.",
+  "origin": "Suiza",
+  "size": "Gigante",
+  "life_span": "8-10 años",
+      "images": [
+        "/static/breeds/n02109525-saint-bernard/1.jpg",
+        "/static/breeds/n02109525-saint-bernard/2.jpg",
+        "/static/breeds/n02109525-saint-bernard/3.jpg",
+        "/static/breeds/n02109525-saint-bernard/4.jpg",
+        "/static/breeds/n02109525-saint-bernard/5.jpg",
+        "/static/breeds/n02109525-saint-bernard/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02109961-eskimo-dog",
+      "label": "eskimo-dog",
+      "name": "Eskimo Dog",
+      "description": "Perro nórdico americano descendiente de spitz europeos. Es alegre, inteligente y muy expresivo. Excelente guardián y compañero familiar, con energía moderada.",
+  "temperament": "Alerta, amigable, inteligente, vivaz.",
+  "origin": "Estados Unidos",
+  "size": "Pequeño-Mediano",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02109961-eskimo-dog/1.jpg",
+        "/static/breeds/n02109961-eskimo-dog/2.jpg",
+        "/static/breeds/n02109961-eskimo-dog/3.jpg",
+        "/static/breeds/n02109961-eskimo-dog/4.jpg",
+        "/static/breeds/n02109961-eskimo-dog/5.jpg",
+        "/static/breeds/n02109961-eskimo-dog/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02110063-malamute",
+      "label": "malamute",
+      "name": "Malamute",
+       "description": "Perro de trineo originario de Alaska, conocido por su fuerza y resistencia. Es sociable y cariñoso, pero muy dominante si no se educa bien. Necesita mucho ejercicio y espacios amplios.",
+  "temperament": "Afectuoso, fuerte, sociable, dominante.",
+  "origin": "Estados Unidos (Alaska)",
+  "size": "Grande",
+  "life_span": "10-12 años",
+      "images": [
+        "/static/breeds/n02110063-malamute/1.jpg",
+        "/static/breeds/n02110063-malamute/2.jpg",
+        "/static/breeds/n02110063-malamute/3.jpg",
+        "/static/breeds/n02110063-malamute/4.jpg",
+        "/static/breeds/n02110063-malamute/5.jpg",
+        "/static/breeds/n02110063-malamute/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02110185-siberian-husky",
+      "label": "siberian-husky",
+      "name": "Siberian Husky",
+      "description": "Antigua raza de Siberia usada por los chukchi para tirar trineos. Es enérgico, sociable y de mirada intensa. Ama correr, convivir en grupo y requiere mucho ejercicio.",
+  "temperament": "Sociable, energético, libre, amigable.",
+  "origin": "Siberia",
+  "size": "Mediano",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02110185-siberian-husky/1.jpg",
+        "/static/breeds/n02110185-siberian-husky/2.jpg",
+        "/static/breeds/n02110185-siberian-husky/3.jpg",
+        "/static/breeds/n02110185-siberian-husky/4.jpg",
+        "/static/breeds/n02110185-siberian-husky/5.jpg",
+        "/static/breeds/n02110185-siberian-husky/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02110627-affenpinscher",
+      "label": "affenpinscher",
+      "name": "Affenpinscher",
+      "description": "Pequeño perro alemán conocido por su expresión similar a la de un mono. Es vivaz, seguro de sí mismo y muy curioso. Ideal para hogares pequeños, destaca por su carácter divertido y valiente.",
+  "temperament": "Juguetón, valiente, curioso, alerta.",
+  "origin": "Alemania",
+  "size": "Pequeño",
+  "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02110627-affenpinscher/1.jpg",
+        "/static/breeds/n02110627-affenpinscher/2.jpg",
+        "/static/breeds/n02110627-affenpinscher/3.jpg",
+        "/static/breeds/n02110627-affenpinscher/4.jpg",
+        "/static/breeds/n02110627-affenpinscher/5.jpg",
+        "/static/breeds/n02110627-affenpinscher/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02110806-basenji",
+      "label": "basenji",
+      "name": "Basenji",
+       "description": "Raza africana muy antigua conocida como ‘el perro que no ladra’. Limpio, elegante e independiente, con un carácter curioso y reservado. Es activo y necesita estimulación mental para evitar aburrirse.",
+  "temperament": "Independiente, atento, curioso, reservado.",
+  "origin": "África Central",
+  "size": "Pequeño-Mediano",
+  "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02110806-basenji/1.jpg",
+        "/static/breeds/n02110806-basenji/2.jpg",
+        "/static/breeds/n02110806-basenji/3.jpg",
+        "/static/breeds/n02110806-basenji/4.jpg",
+        "/static/breeds/n02110806-basenji/5.jpg",
+        "/static/breeds/n02110806-basenji/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02110958-pug",
+      "label": "pug",
+      "name": "Pug",
+      "description": "Pequeño perro chino de cara arrugada, famoso por su personalidad divertida y cariñosa. Muy sociable y adaptable, ideal para vida en interiores. Le encanta estar cerca de su familia.",
+  "temperament": "Afectuoso, gracioso, sociable, tranquilo.",
+  "origin": "China",
+  "size": "Pequeño",
+  "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02110958-pug/1.jpg",
+        "/static/breeds/n02110958-pug/2.jpg",
+        "/static/breeds/n02110958-pug/3.jpg",
+        "/static/breeds/n02110958-pug/4.jpg",
+        "/static/breeds/n02110958-pug/5.jpg",
+        "/static/breeds/n02110958-pug/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02111129-leonberg",
+      "label": "leonberg",
+      "name": "Leonberg",
+     "description": "Gigante alemán de pelaje abundante y personalidad equilibrada. Es muy tranquilo, noble y excelente con niños. Requiere espacio, ejercicio moderado y cuidados en su pelaje.",
+  "temperament": "Dulce, noble, protector, calmado.",
+  "origin": "Alemania",
+  "size": "Gigante",
+  "life_span": "8-10 años",
+      "images": [
+        "/static/breeds/n02111129-leonberg/1.jpg",
+        "/static/breeds/n02111129-leonberg/2.jpg",
+        "/static/breeds/n02111129-leonberg/3.jpg",
+        "/static/breeds/n02111129-leonberg/4.jpg",
+        "/static/breeds/n02111129-leonberg/5.jpg",
+        "/static/breeds/n02111129-leonberg/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02111277-newfoundland",
+      "label": "newfoundland",
+      "name": "Newfoundland",
+     "description": "Gigante canadiense famoso por su habilidad para nadar y rescatar personas. Es extremadamente amable, paciente y afectuoso. Su carácter tranquilo lo hace ideal para familias con niños.",
+  "temperament": "Cariñoso, paciente, fuerte, noble.",
+  "origin": "Canadá",
+  "size": "Gigante",
+  "life_span": "9-10 años",
+      "images": [
+        "/static/breeds/n02111277-newfoundland/1.jpg",
+        "/static/breeds/n02111277-newfoundland/2.jpg",
+        "/static/breeds/n02111277-newfoundland/3.jpg",
+        "/static/breeds/n02111277-newfoundland/4.jpg",
+        "/static/breeds/n02111277-newfoundland/5.jpg",
+        "/static/breeds/n02111277-newfoundland/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02111500-great-pyrenees",
+      "label": "great-pyrenees",
+      "name": "Great Pyrenees",
+      "description": "Perro guardián de los Pirineos, de gran tamaño y pelaje blanco. Es calmado, paciente y muy protector. Requiere espacio, paseos y una familia que aprecie su carácter independiente.",
+  "temperament": "Calmo, protector, noble, independiente.",
+  "origin": "Francia / España",
+  "size": "Grande",
+  "life_span": "10-12 años",
+      "images": [
+        "/static/breeds/n02111500-great-pyrenees/1.jpg",
+        "/static/breeds/n02111500-great-pyrenees/2.jpg",
+        "/static/breeds/n02111500-great-pyrenees/3.jpg",
+        "/static/breeds/n02111500-great-pyrenees/4.jpg",
+        "/static/breeds/n02111500-great-pyrenees/5.jpg",
+        "/static/breeds/n02111500-great-pyrenees/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02111889-samoyed",
+      "label": "samoyed",
+      "name": "Samoyed",
+     "description": "Perro siberiano de pelaje blanco y sonrisa característica. Amable, juguetón y muy social. Necesita ejercicio y cuidados constantes en su pelaje. Excelente perro familiar.",
+  "temperament": "Alegre, amistoso, activo, cariñoso.",
+  "origin": "Rusia (Siberia)",
+  "size": "Mediano-Grande",
+  "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02111889-samoyed/1.jpg",
+        "/static/breeds/n02111889-samoyed/2.jpg",
+        "/static/breeds/n02111889-samoyed/3.jpg",
+        "/static/breeds/n02111889-samoyed/4.jpg",
+        "/static/breeds/n02111889-samoyed/5.jpg",
+        "/static/breeds/n02111889-samoyed/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02112018-pomeranian",
+      "label": "pomeranian",
+      "name": "Pomeranian",
+      "description": "Raza pequeña del tipo spitz, muy esponjosa y expresiva. A pesar de su tamaño, tiene una gran personalidad: es vivaz, confiado y vocal. Perfecto para compañía y hogares pequeños.",
+  "temperament": "Vivaz, seguro, curioso, cariñoso.",
+  "origin": "Alemania / Polonia",
+  "size": "Muy pequeño",
+  "life_span": "12-16 años",
+      "images": [
+        "/static/breeds/n02112018-pomeranian/1.jpg",
+        "/static/breeds/n02112018-pomeranian/2.jpg",
+        "/static/breeds/n02112018-pomeranian/3.jpg",
+        "/static/breeds/n02112018-pomeranian/4.jpg",
+        "/static/breeds/n02112018-pomeranian/5.jpg",
+        "/static/breeds/n02112018-pomeranian/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02112137-chow",
+      "label": "chow",
+      "name": "Chow",
+     "description": "Antigua raza china reconocida por su lengua azul y su expresión de león. Es reservado, independiente y muy protector. Requiere socialización desde cachorro y cuidados especiales en el pelaje.",
+  "temperament": "Reservado, leal, serio, independiente.",
+  "origin": "China",
+  "size": "Mediano-Grande",
+  "life_span": "9-12 años",
+      "images": [
+        "/static/breeds/n02112137-chow/1.jpg",
+        "/static/breeds/n02112137-chow/2.jpg",
+        "/static/breeds/n02112137-chow/3.jpg",
+        "/static/breeds/n02112137-chow/4.jpg",
+        "/static/breeds/n02112137-chow/5.jpg",
+        "/static/breeds/n02112137-chow/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02112350-keeshond",
+      "label": "keeshond",
+      "name": "Keeshond",
+      "description": "Perro holandés tipo spitz, famoso por su pelaje gris y expresión siempre sonriente. Muy sociable, inteligente y afectuoso. Excelente perro familiar y vigilante moderado.",
+  "temperament": "Sociable, alegre, inteligente, leal.",
+  "origin": "Países Bajos",
+  "size": "Mediano",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02112350-keeshond/1.jpg",
+        "/static/breeds/n02112350-keeshond/2.jpg",
+        "/static/breeds/n02112350-keeshond/3.jpg",
+        "/static/breeds/n02112350-keeshond/4.jpg",
+        "/static/breeds/n02112350-keeshond/5.jpg",
+        "/static/breeds/n02112350-keeshond/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02112706-brabancon-griffon",
+      "label": "brabancon-griffon",
+      "name": "Brabancon Griffon",
+      "description": "Pequeño perro belga muy expresivo, parte del grupo de los grifones de Bruselas. Es inteligente, sensible y cariñoso, formando lazos muy fuertes con su dueño. Le encanta la compañía humana y no tolera la soledad.",
+  "temperament": "Cariñoso, sensible, inteligente, apegado.",
+  "origin": "Bélgica",
+  "size": "Pequeño",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02112706-brabancon-griffon/1.jpg",
+        "/static/breeds/n02112706-brabancon-griffon/2.jpg",
+        "/static/breeds/n02112706-brabancon-griffon/3.jpg",
+        "/static/breeds/n02112706-brabancon-griffon/4.jpg",
+        "/static/breeds/n02112706-brabancon-griffon/5.jpg",
+        "/static/breeds/n02112706-brabancon-griffon/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02113023-pembroke",
+      "label": "pembroke",
+      "name": "Pembroke",
+       "description": "Raza galesa de pastoreo, famosa por su cuerpo corto y orejas grandes. Es muy inteligente, leal y activo. Excelente perro familiar, enérgico y con instinto de trabajo, amado por su carácter amistoso.",
+  "temperament": "Alegre, inteligente, leal, activo.",
+  "origin": "Gales (Reino Unido)",
+  "size": "Pequeño-Mediano",
+  "life_span": "12-14 años",
+      "images": [
+        "/static/breeds/n02113023-pembroke/1.jpg",
+        "/static/breeds/n02113023-pembroke/2.jpg",
+        "/static/breeds/n02113023-pembroke/3.jpg",
+        "/static/breeds/n02113023-pembroke/4.jpg",
+        "/static/breeds/n02113023-pembroke/5.jpg",
+        "/static/breeds/n02113023-pembroke/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02113186-cardigan",
+      "label": "cardigan",
+      "name": "Cardigan",
+       "description": "Más antiguo que el Pembroke, distinguible por su cola larga. Es trabajador, obediente y con un fuerte lazo hacia su familia. Muy versátil y adaptable, con una personalidad amable.",
+  "temperament": "Leal, trabajador, amable, vigilante.",
+  "origin": "Gales",
+  "size": "Mediano",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02113186-cardigan/1.jpg",
+        "/static/breeds/n02113186-cardigan/2.jpg",
+        "/static/breeds/n02113186-cardigan/3.jpg",
+        "/static/breeds/n02113186-cardigan/4.jpg",
+        "/static/breeds/n02113186-cardigan/5.jpg",
+        "/static/breeds/n02113186-cardigan/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02113624-toy-poodle",
+      "label": "toy-poodle",
+      "name": "Toy Poodle",
+      "description": "La variedad más pequeña del caniche. Es extremadamente inteligente, activo y cariñoso. Ideal para personas que buscan un perro pequeño pero atento, aprende trucos con facilidad.",
+  "temperament": "Inteligente, afectuoso, activo, dócil.",
+  "origin": "Francia / Alemania",
+  "size": "Muy pequeño",
+  "life_span": "14-18 años",
+      "images": [
+        "/static/breeds/n02113624-toy-poodle/1.jpg",
+        "/static/breeds/n02113624-toy-poodle/2.jpg",
+        "/static/breeds/n02113624-toy-poodle/3.jpg",
+        "/static/breeds/n02113624-toy-poodle/4.jpg",
+        "/static/breeds/n02113624-toy-poodle/5.jpg",
+        "/static/breeds/n02113624-toy-poodle/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02113712-miniature-poodle",
+      "label": "miniature-poodle",
+      "name": "Miniature Poodle",
+    "description": "Caniche de tamaño mediano, muy elegante y obediente. Destaca por su inteligencia y versatilidad, siendo excelente en deportes caninos. Sociable y cariñoso con su familia.",
+  "temperament": "Obediente, sociable, inteligente, alerta.",
+  "origin": "Francia / Alemania",
+  "size": "Pequeño-Mediano",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02113712-miniature-poodle/1.jpg",
+        "/static/breeds/n02113712-miniature-poodle/2.jpg",
+        "/static/breeds/n02113712-miniature-poodle/3.jpg",
+        "/static/breeds/n02113712-miniature-poodle/4.jpg",
+        "/static/breeds/n02113712-miniature-poodle/5.jpg",
+        "/static/breeds/n02113712-miniature-poodle/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02113799-standard-poodle",
+      "label": "standard-poodle",
+      "name": "Standard Poodle",
+       "description": "La versión original del caniche, de tamaño grande. Es atlético, muy inteligente y un extraordinario nadador. Combina elegancia con fuerza y es excelente compañero familiar y perro de trabajo.",
+  "temperament": "Elegante, inteligente, activo, leal.",
+  "origin": "Francia / Alemania",
+  "size": "Grande",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02113799-standard-poodle/1.jpg",
+        "/static/breeds/n02113799-standard-poodle/2.jpg",
+        "/static/breeds/n02113799-standard-poodle/3.jpg",
+        "/static/breeds/n02113799-standard-poodle/4.jpg",
+        "/static/breeds/n02113799-standard-poodle/5.jpg",
+        "/static/breeds/n02113799-standard-poodle/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02113978-mexican-hairless",
+      "label": "mexican-hairless",
+      "name": "Mexican Hairless",
+     "description": "Antiquísima raza mexicana, considerada sagrada por culturas prehispánicas. Sin pelo, tranquila y muy apegada a su familia. Tiene un carácter noble, protector y equilibrado.",
+  "temperament": "Calmado, noble, leal, protector.",
+  "origin": "México",
+  "size": "Pequeño / Mediano / Grande (3 variedades)",
+  "life_span": "12-15 años",
+      "images": [
+        "/static/breeds/n02113978-mexican-hairless/1.jpg",
+        "/static/breeds/n02113978-mexican-hairless/2.jpg",
+        "/static/breeds/n02113978-mexican-hairless/3.jpg",
+        "/static/breeds/n02113978-mexican-hairless/4.jpg",
+        "/static/breeds/n02113978-mexican-hairless/5.jpg",
+        "/static/breeds/n02113978-mexican-hairless/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02115641-dingo",
+      "label": "dingo",
+      "name": "Dingo",
+       "description": "El dingo es un perro salvaje originario de Australia. Aunque comparte ancestros con perros domésticos, conserva un comportamiento mucho más independiente e instintivo. Es un cazador oportunista, sociable dentro de su manada y muy adaptable a distintos ecosistemas.",
+  "temperament": "Independiente, alerta, territorial, social en grupos.",
+  "origin": "Australia",
+  "size": "Mediano",
+  "life_span": "10-12 años (en libertad), 14-16 años (en cautiverio)",
+      "images": [
+        "/static/breeds/n02115641-dingo/1.jpg",
+        "/static/breeds/n02115641-dingo/2.jpg",
+        "/static/breeds/n02115641-dingo/3.jpg",
+        "/static/breeds/n02115641-dingo/4.jpg",
+        "/static/breeds/n02115641-dingo/5.jpg",
+        "/static/breeds/n02115641-dingo/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02115913-dhole",
+      "label": "dhole",
+      "name": "Dhole",
+      "description": "El dhole es un perro salvaje asiático conocido por su increíble habilidad para cazar en equipo. Es altamente social y vive en grandes grupos cooperativos. Es ágil, veloz y posee un característico silbido para comunicarse con su manada.",
+  "temperament": "Social, cooperativo, ágil, estratégico.",
+  "origin": "Asia (India, Sudeste Asiático)",
+  "size": "Mediano",
+  "life_span": "10-12 años",
+      "images": [
+        "/static/breeds/n02115913-dhole/1.jpg",
+        "/static/breeds/n02115913-dhole/2.jpg",
+        "/static/breeds/n02115913-dhole/3.jpg",
+        "/static/breeds/n02115913-dhole/4.jpg",
+        "/static/breeds/n02115913-dhole/5.jpg",
+        "/static/breeds/n02115913-dhole/6.jpg"
+      ]
+    },
+    {
+      "slug": "n02116738-african-hunting-dog",
+      "label": "african-hunting-dog",
+      "name": "African Hunting Dog",
+      "description": "Conocido también como perro salvaje africano, es un cánido no domesticado que caza exclusivamente en manada. Es extremadamente resistente y uno de los cazadores más eficientes del reino animal. Vive y trabaja en grupos altamente organizados.",
+  "temperament": "Social en manada, estratégico, resistente, cooperativo.",
+  "origin": "África Subsahariana",
+  "size": "Mediano",
+  "life_span": "10-12 años",
+      "images": [
+        "/static/breeds/n02116738-african-hunting-dog/1.jpg",
+        "/static/breeds/n02116738-african-hunting-dog/2.jpg",
+        "/static/breeds/n02116738-african-hunting-dog/3.jpg",
+        "/static/breeds/n02116738-african-hunting-dog/4.jpg",
+        "/static/breeds/n02116738-african-hunting-dog/5.jpg",
+        "/static/breeds/n02116738-african-hunting-dog/6.jpg"
+      ]
+    }
+  ]
+}

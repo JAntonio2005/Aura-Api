@@ -9,6 +9,8 @@ from app.core.config import MODEL_DIR, IMG_SIZE
 MODEL_PATH = MODEL_DIR / "model.keras"
 LABELS_PATH = MODEL_DIR / "labels.json"
 
+CONFIDENCE_THRESHOLD = 0.60
+
 model = tf.keras.models.load_model(str(MODEL_PATH))
 CLASS_NAMES: List[str] = json.load(open(LABELS_PATH, "r", encoding="utf-8"))
 
