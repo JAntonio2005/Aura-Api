@@ -5,7 +5,7 @@ from starlette.staticfiles import StaticFiles
 from sqlalchemy.engine import make_url
 
 from app.core.config import settings, STATIC_DIR
-from app.routers import predict, breeds, auth, history, account
+from app.routers import predict, breeds, auth, history, account, assistant
 import app.models.history          # registra PredictionLog / SearchLog
 import app.models.password_reset   # registra PasswordReset
 from app.db import create_db_and_tables
@@ -40,6 +40,7 @@ app.include_router(predict.router)   # /predict (protegido)
 app.include_router(breeds.router)    # /labels, /breed_info, /samples
 app.include_router(history.router)   # /history/*
 app.include_router(account.router)   # /account/*
+app.include_router(assistant.router)  # /assistant
 if settings.DEBUG:
     app.include_router(dev.router)    # /_dev/* (solo si DEBUG)
 

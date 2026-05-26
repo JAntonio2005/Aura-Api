@@ -41,3 +41,28 @@ class ForgotPasswordIn(BaseModel):
 class ResetPasswordIn(BaseModel):
     token: str
     new_password: str
+
+
+class AssistantRequest(BaseModel):
+    message: str = Field(min_length=1, max_length=1000)
+    intent: Optional[str] = None
+    breed: Optional[str] = None
+    dog_context: Optional[Dict[str, Any]] = None
+    language: str = "es"
+    include_disclaimer: bool = True
+
+
+class AssistantBreedOut(BaseModel):
+    label: str
+    name: str
+
+
+class AssistantResponse(BaseModel):
+    answer: str
+    intent: str
+    breed: Optional[AssistantBreedOut] = None
+    safety_level: str
+    disclaimer: Optional[str] = None
+    recommend_vet: bool
+    sources: List[str]
+    suggested_followups: List[str]
