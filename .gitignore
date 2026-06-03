@@ -1,4 +1,50 @@
+# ==== Python cache ====
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ==== Virtual environments ====
+.venv/
+venv/
+env/
+auraml/
+auraml311/
+
+# ==== IDE / editor ====
+.vscode/
+.idea/
+
+# ==== Local env / secrets ====
+.env
+app/.env
+
+# ==== Local databases ====
+*.db
+*.db-journal
+local_data/
+
+# ==== Logs ====
+logs/
+*.log
+uvicorn-*.log
+
+# ==== Local temp files ====
+write_test.txt
+
+# ==== Local external references ====
+picogpt/
+picoGPT/
+
+# ==== picoGPT local models / checkpoints ====
 picogpt/**/models/
 picoGPT/**/models/
+reference/**/models/
 *.ckpt
 *.ckpt.*
+
+# ==== Training datasets inside exports ====
+exports/stanford-dogs_*/dataset/
+exports/stanford-dogs_*/raw/
+exports/stanford-dogs_*/images/
+exports/stanford-dogs_*/tfds/
