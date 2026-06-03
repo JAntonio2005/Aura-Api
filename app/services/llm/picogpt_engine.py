@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import re
 import subprocess
 import sys
 import time
@@ -22,6 +23,26 @@ from app.services.llm.rules_engine import (
 
 class PicoGptEngine(AssistantEngine):
     name = "picogpt"
+    USEFUL_TERMS = {
+        "agua",
+        "alimento",
+        "alimentacion",
+        "comida",
+        "veterinario",
+        "higiene",
+        "descanso",
+        "rutina",
+        "cuidado",
+        "cuidados",
+        "salud",
+        "paseo",
+        "vacunas",
+        "desparasitacion",
+        "seguro",
+        "tranquilo",
+        "observa",
+    }
+    PROMPT_ECHO_TERMS = {"pregunta:", "respuesta:", "raza:", "contexto:"}
 
     def __init__(
         self,
@@ -63,13 +84,17 @@ class PicoGptEngine(AssistantEngine):
             return self.fallback.generate(request, breed_info, intent, safety_context)
 
         answer = self._clean_output(generated)
-        if not answer:
+        is_valid, rejection_reason = self._validate_quality(answer)
+        if not is_valid:
             elapsed = time.perf_counter() - started
-            print(f"[Assistant] PicoGPT returned empty output after {elapsed:.2f}s; using rules fallback.")
+            print(
+                "[Assistant] PicoGPT response rejected by quality gate "
+                f"after {elapsed:.2f}s: {rejection_reason}; fallback to RulesEngine."
+            )
             return self.fallback.generate(request, breed_info, intent, safety_context)
 
         elapsed = time.perf_counter() - started
-        print(f"[Assistant] PicoGPT generated response in {elapsed:.2f}s.")
+        print(f"[Assistant] PicoGPT generated response in {elapsed:.2f}s and passed quality gate.")
 
         breed_out = None
         if breed_info:
@@ -156,11 +181,13 @@ class PicoGptEngine(AssistantEngine):
         dog_context = ""
         if request.dog_context:
             dog_context = f" Contexto: {json.dumps(request.dog_context, ensure_ascii=True)}."
+        size_context = ""
+        if breed_info and breed_info.get("size"):
+            size_context = f" Tamano: {plain_text(breed_info.get('size'))}."
         return (
-            "Responde en espanol con una orientacion breve y segura sobre cuidado canino. "
-            "Evita medicamentos y dosis. "
-            f"Raza: {breed_name}.{dog_context} "
-            f"Pregunta: {plain_text(request.message)} Respuesta: Para este perro, "
+            f"Intent: {intent}. Raza: {breed_name}.{size_context}{dog_context}\n"
+            f"Pregunta: {plain_text(request.message)}\n"
+            "Respuesta breve en espanol sobre cuidado canino seguro:"
         )
 
     def _run_picogpt(self, prompt: str) -> str:
@@ -197,8 +224,35 @@ print(json.dumps({{"output": out}}))
     def _clean_output(self, text: str) -> str:
         answer = plain_text(text)
         answer = " ".join(answer.split())
-        if "Respuesta:" in answer:
-            answer = answer.split("Respuesta:", 1)[-1].strip()
+        for marker in ("Respuesta breve en espanol sobre cuidado canino seguro:", "Respuesta:"):
+            if marker in answer:
+                answer = answer.split(marker, 1)[-1].strip()
         if len(answer) > 700:
             answer = answer[:700].rsplit(" ", 1)[0].strip()
         return answer
+
+    def _validate_quality(self, answer: str) -> tuple[bool, str]:
+        if not answer:
+            return False, "empty response"
+        if len(answer) < 20:
+            return False, "response shorter than 20 characters"
+
+        lowered = answer.lower()
+        if any(term in lowered for term in self.PROMPT_ECHO_TERMS):
+            return False, "response echoes prompt markers"
+
+        words = re.findall(r"[a-zA-Z]+", lowered)
+        if len(words) < 4:
+            return False, "too few words"
+
+        counts = {}
+        for word in words:
+            counts[word] = counts.get(word, 0) + 1
+        most_common_count = max(counts.values())
+        if most_common_count >= 4 or most_common_count / max(len(words), 1) > 0.45:
+            return False, "repetitive output"
+
+        if not any(term in lowered for term in self.USEFUL_TERMS):
+            return False, "no useful care vocabulary"
+
+        return True, "ok"
