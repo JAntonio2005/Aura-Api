@@ -85,6 +85,7 @@ class Settings(BaseSettings):
     # Modo
     DEBUG: bool = os.getenv("DEBUG", "true").lower() == "true"
     DB_STARTUP_STRICT: bool = os.getenv("DB_STARTUP_STRICT", "false").lower() == "true"
+    ASSISTANT_ENGINE: str = os.getenv("ASSISTANT_ENGINE", "rules")
     CORS_ORIGINS: list[str] = [
         origin.strip()
         for origin in os.getenv(

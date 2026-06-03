@@ -14,5 +14,6 @@ def assistant(payload: AssistantRequest):
         requested_intent=payload.intent,
         breed_value=payload.breed,
         dog_context=payload.dog_context,
+        language=payload.language,
         include_disclaimer=payload.include_disclaimer,
     )
