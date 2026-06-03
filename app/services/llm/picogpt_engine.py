@@ -4,6 +4,7 @@ import importlib.util
 import json
 import subprocess
 import sys
+import time
 from pathlib import Path
 from typing import Any, Dict, Optional
 
@@ -26,8 +27,8 @@ class PicoGptEngine(AssistantEngine):
         self,
         fallback: Optional[AssistantEngine] = None,
         model_size: str = "124M",
-        max_tokens: int = 60,
-        timeout_seconds: int = 20,
+        max_tokens: int = 25,
+        timeout_seconds: int = 90,
     ):
         self.fallback = fallback or RulesEngine()
         self.model_size = model_size
@@ -53,16 +54,22 @@ class PicoGptEngine(AssistantEngine):
             return self.fallback.generate(request, breed_info, intent, safety_context)
 
         prompt = self._build_prompt(request, breed_info, intent)
+        started = time.perf_counter()
         try:
             generated = self._run_picogpt(prompt)
         except Exception as exc:
-            print(f"[Assistant] PicoGPT failed: {exc}; using rules fallback.")
+            elapsed = time.perf_counter() - started
+            print(f"[Assistant] PicoGPT failed after {elapsed:.2f}s: {exc}; using rules fallback.")
             return self.fallback.generate(request, breed_info, intent, safety_context)
 
         answer = self._clean_output(generated)
         if not answer:
-            print("[Assistant] PicoGPT returned empty output; using rules fallback.")
+            elapsed = time.perf_counter() - started
+            print(f"[Assistant] PicoGPT returned empty output after {elapsed:.2f}s; using rules fallback.")
             return self.fallback.generate(request, breed_info, intent, safety_context)
+
+        elapsed = time.perf_counter() - started
+        print(f"[Assistant] PicoGPT generated response in {elapsed:.2f}s.")
 
         breed_out = None
         if breed_info:
@@ -142,22 +149,18 @@ class PicoGptEngine(AssistantEngine):
         breed_info: Optional[Dict[str, Any]],
         intent: str,
     ) -> str:
-        breed_context = "Sin raza especifica."
+        breed_name = "No especificada"
         if breed_info:
-            breed_context = (
-                f"Raza: {plain_text(breed_info.get('name'))}. "
-                f"Tamano: {plain_text(breed_info.get('size'))}. "
-                f"Temperamento: {plain_text(breed_info.get('temperament'))}. "
-                f"Descripcion: {plain_text(breed_info.get('description'))}."
-            )
+            breed_name = plain_text(breed_info.get("name")) or "No especificada"
 
-        dog_context = json.dumps(request.dog_context or {}, ensure_ascii=True)
+        dog_context = ""
+        if request.dog_context:
+            dog_context = f" Contexto: {json.dumps(request.dog_context, ensure_ascii=True)}."
         return (
-            "Eres Aura Assistant, un asistente educativo para cuidado responsable de perros. "
-            "Responde en espanol, breve y seguro. No recomiendes medicamentos ni dosis. "
-            "Si hay signos de urgencia, indica acudir al veterinario. "
-            f"Intent: {intent}. {breed_context} Contexto del perro: {dog_context}. "
-            f"Pregunta: {plain_text(request.message)}\nRespuesta:"
+            "Responde en espanol con una orientacion breve y segura sobre cuidado canino. "
+            "Evita medicamentos y dosis. "
+            f"Raza: {breed_name}.{dog_context} "
+            f"Pregunta: {plain_text(request.message)} Respuesta: Para este perro, "
         )
 
     def _run_picogpt(self, prompt: str) -> str:
