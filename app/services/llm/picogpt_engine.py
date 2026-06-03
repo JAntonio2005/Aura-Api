@@ -10,14 +10,11 @@ from pathlib import Path
 from typing import Any, Dict, Optional
 
 from app.core.config import PROJECT_ROOT
-from app.models.schemas import AssistantBreedOut, AssistantRequest, AssistantResponse
+from app.models.schemas import AssistantRequest, AssistantResponse
 from app.services.llm.base import AssistantEngine
 from app.services.llm.rules_engine import (
-    DEFAULT_DISCLAIMER,
     RulesEngine,
-    _sources,
     plain_text,
-    suggested_followups,
 )
 
 
@@ -41,14 +38,43 @@ class PicoGptEngine(AssistantEngine):
         "seguro",
         "tranquilo",
         "observa",
+        "adopcion",
+        "adoptar",
+        "rescate",
+        "rescatado",
+        "abandono",
+        "refugio",
     }
-    PROMPT_ECHO_TERMS = {"pregunta:", "respuesta:", "raza:", "contexto:"}
+    PROMPT_ECHO_TERMS = {
+        "pregunta:",
+        "respuesta:",
+        "texto:",
+        "version final",
+        "version final:",
+        "reescribe",
+        "raza:",
+        "contexto:",
+    }
+    UNSAFE_MEDICATION_TERMS = {
+        "medicamento",
+        "medicamentos",
+        "dosis",
+        "mg",
+        "ml",
+        "pastilla",
+        "paracetamol",
+        "ibuprofeno",
+        "antibiotico",
+        "antibioticos",
+        "amoxicilina",
+        "aspirina",
+    }
 
     def __init__(
         self,
         fallback: Optional[AssistantEngine] = None,
         model_size: str = "124M",
-        max_tokens: int = 25,
+        max_tokens: int = 40,
         timeout_seconds: int = 90,
     ):
         self.fallback = fallback or RulesEngine()
@@ -65,54 +91,49 @@ class PicoGptEngine(AssistantEngine):
         intent: str,
         safety_context: Dict[str, Any],
     ) -> AssistantResponse:
-        if safety_context.get("urgent"):
-            print("[Assistant] PicoGPT bypassed: urgent safety context; using rules fallback.")
-            return self.fallback.generate(request, breed_info, intent, safety_context)
+        rules_started = time.perf_counter()
+        base_response = self.fallback.generate(request, breed_info, intent, safety_context)
+        rules_elapsed = time.perf_counter() - rules_started
+        print(f"[Assistant] RulesEngine base answer generated in {rules_elapsed:.3f}s.")
+
+        if safety_context.get("urgent") or base_response.recommend_vet:
+            print("[Assistant] PicoGPT bypassed: urgent safety context; using RulesEngine base answer.")
+            return base_response
 
         available, reason = self.is_available()
         if not available:
-            print(f"[Assistant] PicoGPT unavailable: {reason}; using rules fallback.")
-            return self.fallback.generate(request, breed_info, intent, safety_context)
+            print(f"[Assistant] PicoGPT unavailable: {reason}; using RulesEngine base answer.")
+            return base_response
 
-        prompt = self._build_prompt(request, breed_info, intent)
+        prompt = self._build_prompt(base_response.answer)
         started = time.perf_counter()
         try:
             generated = self._run_picogpt(prompt)
         except Exception as exc:
             elapsed = time.perf_counter() - started
-            print(f"[Assistant] PicoGPT failed after {elapsed:.2f}s: {exc}; using rules fallback.")
-            return self.fallback.generate(request, breed_info, intent, safety_context)
+            print(f"[Assistant] PicoGPT failed after {elapsed:.2f}s: {exc}; using RulesEngine base answer.")
+            return base_response
 
         answer = self._clean_output(generated)
+        elapsed = time.perf_counter() - started
+        print(f"[Assistant] PicoGPT generated candidate in {elapsed:.2f}s: {answer[:300]!r}")
         is_valid, rejection_reason = self._validate_quality(answer)
         if not is_valid:
-            elapsed = time.perf_counter() - started
             print(
                 "[Assistant] PicoGPT response rejected by quality gate "
-                f"after {elapsed:.2f}s: {rejection_reason}; fallback to RulesEngine."
+                f"after {elapsed:.2f}s: {rejection_reason}. PicoGPT rejected; using rules base answer."
             )
-            return self.fallback.generate(request, breed_info, intent, safety_context)
+            return base_response
 
-        elapsed = time.perf_counter() - started
-        print(f"[Assistant] PicoGPT generated response in {elapsed:.2f}s and passed quality gate.")
+        print(f"[Assistant] PicoGPT accepted after {elapsed:.2f}s; returning rewritten answer.")
 
-        breed_out = None
-        if breed_info:
-            breed_out = AssistantBreedOut(
-                label=breed_info.get("slug") or breed_info.get("label"),
-                name=plain_text(breed_info.get("name")),
-            )
-
-        return AssistantResponse(
-            answer=answer,
-            intent=intent,
-            breed=breed_out,
-            safety_level=safety_context.get("safety_level", "basic_guidance"),
-            disclaimer=DEFAULT_DISCLAIMER if request.include_disclaimer else None,
-            recommend_vet=bool(safety_context.get("recommend_vet")),
-            sources=_sources(breed_info, ["picogpt_experimental"]),
-            suggested_followups=suggested_followups(intent, False),
-        )
+        response_data = base_response.model_dump()
+        response_data["answer"] = answer
+        sources = list(response_data.get("sources") or [])
+        if "picogpt_experimental" not in sources:
+            sources.append("picogpt_experimental")
+        response_data["sources"] = sources
+        return AssistantResponse(**response_data)
 
     def is_available(self) -> tuple[bool, str]:
         if not self.picogpt_dir:
@@ -168,26 +189,12 @@ class PicoGptEngine(AssistantEngine):
                 return candidate
         return None
 
-    def _build_prompt(
-        self,
-        request: AssistantRequest,
-        breed_info: Optional[Dict[str, Any]],
-        intent: str,
-    ) -> str:
-        breed_name = "No especificada"
-        if breed_info:
-            breed_name = plain_text(breed_info.get("name")) or "No especificada"
-
-        dog_context = ""
-        if request.dog_context:
-            dog_context = f" Contexto: {json.dumps(request.dog_context, ensure_ascii=True)}."
-        size_context = ""
-        if breed_info and breed_info.get("size"):
-            size_context = f" Tamano: {plain_text(breed_info.get('size'))}."
+    def _build_prompt(self, base_answer: str) -> str:
+        base_text = plain_text(base_answer)
         return (
-            f"Intent: {intent}. Raza: {breed_name}.{size_context}{dog_context}\n"
-            f"Pregunta: {plain_text(request.message)}\n"
-            "Respuesta breve en espanol sobre cuidado canino seguro:"
+            "Reescribe de forma breve, clara y natural esta orientacion para un usuario "
+            "de una app de cuidado canino. Manten el sentido, no agregues medicamentos "
+            f"ni dosis. Texto: {base_text} Version final:"
         )
 
     def _run_picogpt(self, prompt: str) -> str:
@@ -224,7 +231,12 @@ print(json.dumps({{"output": out}}))
     def _clean_output(self, text: str) -> str:
         answer = plain_text(text)
         answer = " ".join(answer.split())
-        for marker in ("Respuesta breve en espanol sobre cuidado canino seguro:", "Respuesta:"):
+        for marker in (
+            "Version final:",
+            "Version final",
+            "Respuesta breve en espanol sobre cuidado canino seguro:",
+            "Respuesta:",
+        ):
             if marker in answer:
                 answer = answer.split(marker, 1)[-1].strip()
         if len(answer) > 700:
@@ -240,6 +252,10 @@ print(json.dumps({{"output": out}}))
         lowered = answer.lower()
         if any(term in lowered for term in self.PROMPT_ECHO_TERMS):
             return False, "response echoes prompt markers"
+        if any(term in lowered for term in self.UNSAFE_MEDICATION_TERMS):
+            return False, "mentions medication or dosage"
+        if re.search(r"\b\d+\s*(mg|ml|pastillas?|gotas?)\b", lowered):
+            return False, "contains dosage-like pattern"
 
         words = re.findall(r"[a-zA-Z]+", lowered)
         if len(words) < 4:
@@ -254,5 +270,7 @@ print(json.dumps({{"output": out}}))
 
         if not any(term in lowered for term in self.USEFUL_TERMS):
             return False, "no useful care vocabulary"
+        if answer[-1].isalnum():
+            return False, "response appears cut off without sentence ending"
 
         return True, "ok"
