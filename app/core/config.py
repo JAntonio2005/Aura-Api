@@ -86,6 +86,12 @@ class Settings(BaseSettings):
     DEBUG: bool = os.getenv("DEBUG", "true").lower() == "true"
     DB_STARTUP_STRICT: bool = os.getenv("DB_STARTUP_STRICT", "false").lower() == "true"
     ASSISTANT_ENGINE: str = os.getenv("ASSISTANT_ENGINE", "rules")
+    OLLAMA_BASE_URL: str = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+    OLLAMA_MODEL: str = os.getenv("OLLAMA_MODEL", "qwen2.5:3b")
+    OLLAMA_TIMEOUT_SECONDS: int = int(os.getenv("OLLAMA_TIMEOUT_SECONDS", "120"))
+    RAG_TOP_K: int = int(os.getenv("RAG_TOP_K", "4"))
+    RAG_COLLECTION: str = os.getenv("RAG_COLLECTION", "aura_assistant_docs")
+    RAG_CHROMA_DIR: str = os.getenv("RAG_CHROMA_DIR", "chroma_db")
     CORS_ORIGINS: list[str] = [
         origin.strip()
         for origin in os.getenv(

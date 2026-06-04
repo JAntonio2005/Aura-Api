@@ -23,6 +23,7 @@ app/.env
 *.db
 *.db-journal
 local_data/
+chroma_db/
 
 # ==== Logs ====
 logs/
@@ -31,6 +32,18 @@ uvicorn-*.log
 
 # ==== Local temp files ====
 write_test.txt
+
+# ==== Aura Assistant RAG local artifacts ====
+data/assistant_chunks/
+data/assistant_docs/**/*.pdf
+data/assistant_docs/**/*.docx
+data/assistant_docs/**/*.pptx
+data/assistant_docs/**/*.zip
+data/assistant_docs/**/*.tar
+data/assistant_docs/**/*.gz
+.cache/
+cache/
+sentence_transformers/
 
 # ==== Local external references ====
 picogpt/
