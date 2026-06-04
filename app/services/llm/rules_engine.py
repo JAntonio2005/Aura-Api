@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+# Legacy engine. Not used by the default Aura Assistant RAG flow.
+
 import json
 import re
 import unicodedata

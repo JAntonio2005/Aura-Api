@@ -3,8 +3,8 @@ from __future__ import annotations
 from typing import Any, Dict, Optional
 
 from app.models.schemas import AssistantRequest
+from app.services.assistant_context import build_safety_context, find_breed, infer_intent
 from app.services.llm.factory import get_assistant_engine
-from app.services.llm.rules_engine import build_safety_context, find_breed, infer_intent
 
 
 def build_assistant_response(
