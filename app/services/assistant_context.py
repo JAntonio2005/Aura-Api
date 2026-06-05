@@ -107,6 +107,28 @@ def find_breed(value: Optional[str]) -> Optional[Dict[str, Any]]:
     return None
 
 
+def find_breed_in_text(text: Optional[str]) -> Optional[Dict[str, Any]]:
+    haystack = normalize_text(text)
+    if not haystack:
+        return None
+
+    for item in load_breeds():
+        candidates = [
+            item.get("label"),
+            item.get("canonical_label"),
+            item.get("slug"),
+            item.get("name"),
+            item.get("display_name"),
+        ]
+        for candidate in candidates:
+            candidate_text = normalize_text(candidate)
+            if not candidate_text or len(candidate_text) < 3:
+                continue
+            if re.search(rf"\b{re.escape(candidate_text)}\b", haystack):
+                return item
+    return None
+
+
 def has_urgent_symptom(message: str, dog_context: Optional[Dict[str, Any]]) -> bool:
     context_text = ""
     if dog_context:
