@@ -1,0 +1,36 @@
+FROM python:3.11-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    OLLAMA_HOST=127.0.0.1:11434 \
+    OLLAMA_MODELS=/app/ollama_models \
+    RAG_CHROMA_DIR=chroma_db
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        build-essential \
+        ca-certificates \
+        curl \
+        libjpeg-dev \
+        libpq-dev \
+        zstd \
+        zlib1g-dev \
+    && curl -fsSL https://ollama.com/install.sh | sh \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
+
+COPY app ./app
+COPY exports ./exports
+COPY data/assistant_docs ./data/assistant_docs
+COPY start-rag.sh ./start-rag.sh
+
+RUN mkdir -p /app/chroma_db /app/ollama_models /app/data/assistant_docs && \
+    chmod +x /app/start-rag.sh
+
+EXPOSE 8000
+
+CMD ["/app/start-rag.sh"]
