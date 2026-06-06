@@ -1,0 +1,7 @@
+# =========================
+# Aura Assistant RAG local (Chroma + embeddings)
+# Usa esto para preparar ASSISTANT_ENGINE=rag_ollama en local.
+# =========================
+-r requirements.txt
+chromadb>=1.5,<2
+sentence-transformers

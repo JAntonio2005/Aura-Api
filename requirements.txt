@@ -38,8 +38,6 @@ pydantic-settings>=2.0
 psycopg[binary]
 
 # =========================
-# Aura Assistant RAG (local)
+# Aura Assistant HF RAG (Render)
 # =========================
-chromadb>=1.5,<2
-sentence-transformers
 requests

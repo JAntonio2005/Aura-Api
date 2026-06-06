@@ -92,6 +92,16 @@ class Settings(BaseSettings):
     RAG_TOP_K: int = int(os.getenv("RAG_TOP_K", "4"))
     RAG_COLLECTION: str = os.getenv("RAG_COLLECTION", "aura_assistant_docs")
     RAG_CHROMA_DIR: str = os.getenv("RAG_CHROMA_DIR", "chroma_db")
+    HF_TOKEN: Optional[str] = os.getenv("HF_TOKEN") or None
+    HF_MODEL: str = os.getenv("HF_MODEL", "Qwen/Qwen2.5-7B-Instruct:fastest")
+    HF_BASE_URL: str = os.getenv(
+        "HF_BASE_URL",
+        "https://router.huggingface.co/v1/chat/completions",
+    )
+    HF_TIMEOUT_SECONDS: int = int(os.getenv("HF_TIMEOUT_SECONDS", "60"))
+    HF_MAX_TOKENS: int = int(os.getenv("HF_MAX_TOKENS", "300"))
+    HF_TEMPERATURE: float = float(os.getenv("HF_TEMPERATURE", "0.3"))
+    HF_RAG_TOP_K: int = int(os.getenv("HF_RAG_TOP_K", "4"))
     CORS_ORIGINS: list[str] = [
         origin.strip()
         for origin in os.getenv(
