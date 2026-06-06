@@ -2,6 +2,7 @@
 from datetime import datetime, timedelta, timezone
 from jose import jwt, JWTError
 from passlib.context import CryptContext
+from passlib.exc import UnknownHashError
 from app.core.config import settings
 from uuid import uuid4
 import re
@@ -17,7 +18,10 @@ def hash_password(p: str) -> str:
     return pwd_context.hash(p)
 
 def verify_password(p: str, hashed: str) -> bool:
-    return pwd_context.verify(p, hashed)
+    try:
+        return pwd_context.verify(p, hashed)
+    except (TypeError, ValueError, UnknownHashError):
+        return False
 
 # ====== Política de contraseñas ======
 def password_policy_ok(p: str) -> tuple[bool, str]:
