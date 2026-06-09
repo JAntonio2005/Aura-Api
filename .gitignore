@@ -17,6 +17,7 @@ auraml311/
 
 # ==== Local env / secrets ====
 .env
+.env.local
 app/.env
 
 # ==== Local databases ====

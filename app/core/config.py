@@ -55,12 +55,12 @@ SAMPLES_DIR.mkdir(parents=True, exist_ok=True)
 # ----------------------------
 class Settings(BaseSettings):
     # JWT
-    SECRET_KEY: str = os.getenv("SECRET_KEY", "change_me_super_secret")
+    SECRET_KEY: str = "change_me_super_secret"
     ALGORITHM: str = "HS256"
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", "60"))
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 60
 
     # DB (por defecto SQLite en el root del proyecto)
-    DB_URL: str = os.getenv("DB_URL", f"sqlite:///{(PROJECT_ROOT / 'data.db').as_posix()}")
+    DB_URL: str = f"sqlite:///{(PROJECT_ROOT / 'data.db').as_posix()}"
 
     # Frontend: URL que recibirá ?token= para reset password
     FRONTEND_RESET_URL: str = os.getenv("FRONTEND_RESET_URL", "http://127.0.0.1:3000/reset-password")
@@ -85,23 +85,20 @@ class Settings(BaseSettings):
     # Modo
     DEBUG: bool = os.getenv("DEBUG", "true").lower() == "true"
     DB_STARTUP_STRICT: bool = os.getenv("DB_STARTUP_STRICT", "false").lower() == "true"
-    ASSISTANT_ENGINE: str = os.getenv("ASSISTANT_ENGINE", "rag_ollama")
-    OLLAMA_BASE_URL: str = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
-    OLLAMA_MODEL: str = os.getenv("OLLAMA_MODEL", "qwen2.5:3b")
-    OLLAMA_TIMEOUT_SECONDS: int = int(os.getenv("OLLAMA_TIMEOUT_SECONDS", "120"))
-    RAG_TOP_K: int = int(os.getenv("RAG_TOP_K", "4"))
-    RAG_COLLECTION: str = os.getenv("RAG_COLLECTION", "aura_assistant_docs")
-    RAG_CHROMA_DIR: str = os.getenv("RAG_CHROMA_DIR", "chroma_db")
-    HF_TOKEN: Optional[str] = os.getenv("HF_TOKEN") or None
-    HF_MODEL: str = os.getenv("HF_MODEL", "Qwen/Qwen2.5-7B-Instruct:fastest")
-    HF_BASE_URL: str = os.getenv(
-        "HF_BASE_URL",
-        "https://router.huggingface.co/v1/chat/completions",
-    )
-    HF_TIMEOUT_SECONDS: int = int(os.getenv("HF_TIMEOUT_SECONDS", "60"))
-    HF_MAX_TOKENS: int = int(os.getenv("HF_MAX_TOKENS", "300"))
-    HF_TEMPERATURE: float = float(os.getenv("HF_TEMPERATURE", "0.3"))
-    HF_RAG_TOP_K: int = int(os.getenv("HF_RAG_TOP_K", "4"))
+    ASSISTANT_ENGINE: str = "rag_ollama"
+    OLLAMA_BASE_URL: str = "http://localhost:11434"
+    OLLAMA_MODEL: str = "qwen2.5:3b"
+    OLLAMA_TIMEOUT_SECONDS: int = 120
+    RAG_TOP_K: int = 4
+    RAG_COLLECTION: str = "aura_assistant_docs"
+    RAG_CHROMA_DIR: str = "chroma_db"
+    HF_TOKEN: Optional[str] = None
+    HF_MODEL: str = "Qwen/Qwen2.5-7B-Instruct:fastest"
+    HF_BASE_URL: str = "https://router.huggingface.co/v1/chat/completions"
+    HF_TIMEOUT_SECONDS: int = 60
+    HF_MAX_TOKENS: int = 300
+    HF_TEMPERATURE: float = 0.3
+    HF_RAG_TOP_K: int = 4
     CORS_ORIGINS: list[str] = [
         origin.strip()
         for origin in os.getenv(
@@ -130,7 +127,7 @@ class Settings(BaseSettings):
 
     # Carga automática de .env (pydantic-settings v2)
     model_config = SettingsConfigDict(
-        env_file=".env",
+        env_file=(".env", ".env.local"),
         env_file_encoding="utf-8",
         extra="ignore",
     )

@@ -17,6 +17,7 @@ auraml
 
 # ==== Archivos locales que no necesita el contenedor ====
 .env
+.env.local
 data.db
 
 # ==== Notebooks u otras cosas de pruebas ====
